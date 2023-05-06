@@ -1,0 +1,10 @@
+@import './variable.scss';
+html,body{
+    width: 100%;
+    height: 100%;
+}
+.app{
+    cursor: var(--system-cursor-default);
+    // background-color: var(--red-color);
+    
+}

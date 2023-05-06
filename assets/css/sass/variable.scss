@@ -1,0 +1,17 @@
+$apple:pink;
+$banana:blue;
+
+/* 鼠标样式 */
+.app{
+    --system-color-light-hsl:240, 24%, 100%;
+    --system-cursor-default:url('./assets/image/cursor/Cursor(1).ico'),pointer;
+    --red-color:red;
+    --system-color-light: hsl(240, 24%, 100%);
+    --system-color-dark-hsl: 240, 24%, 100%;
+    --system-color-primary: hsl(211, 100%, 50%);
+    --system-color-dark-contrast: hsl(240, 24%, 100%);
+    --system-color-primary-contrast: hsl(240, 24%, 100%);
+    --system-color-grey-100-hsl: 0, 0%, 96%;
+    --system-color-grey-900-hsl: 0, 0%, 13%;
+    // --additional-box-shadow:
+}
