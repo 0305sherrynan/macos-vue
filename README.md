@@ -40,6 +40,14 @@ npm run preview
 ```
 
 Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+## 使用技术栈
+- Nuxt.js
+  - tailwind css
+  - sass
+  - Typescript
+- 工具库
+  - vueuse
+  - pinia
 ## 项目目录细则
 - components 组件
   
