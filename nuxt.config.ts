@@ -8,7 +8,7 @@ const config: NuxtConfig = {
   modules:[
     '@nuxtjs/tailwindcss',
     '@pinia/nuxt',
-    // '@vueuse/nuxt'
+    '@vueuse/nuxt'
 ],
 components:[
     {

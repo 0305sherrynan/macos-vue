@@ -9,7 +9,7 @@
 
 <script setup lang="ts">
 import {contextMenuConfig} from '~/configs/menu/context.menu.config'
-// import { onClickOutside } from '@vueuse/core'
+import { onClickOutside } from '@vueuse/core'
 /**
  * 1
  * 2
@@ -42,7 +42,7 @@ const clickOut = ()=>{
  * onClickOutside 监听hook
  * watch 监听x、y坐标的变化
  */
-// onClickOutside(rightMenuRef,clickOut)
+onClickOutside(rightMenuRef,clickOut)
 watch([xpage,ypage],(newValue,oldValue)=>{
     isShow.value = true
 })
