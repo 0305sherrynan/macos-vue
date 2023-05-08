@@ -4,6 +4,7 @@ import type { NuxtConfig } from '@nuxt/types'
 
 const config: NuxtConfig = {
   buildModules: ['@nuxt/typescript-build','@nuxtjs/tailwindcss'],
+  mode: 'universal',
   modules:[
     '@nuxtjs/tailwindcss',
     '@pinia/nuxt'
