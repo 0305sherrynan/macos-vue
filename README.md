@@ -50,4 +50,4 @@ Check out the [deployment documentation](https://nuxt.com/docs/getting-started/d
   - pinia
 ## 项目目录细则
 - components 组件
-  
+  1
