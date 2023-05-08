@@ -7,7 +7,8 @@ const config: NuxtConfig = {
   mode: 'universal',
   modules:[
     '@nuxtjs/tailwindcss',
-    '@pinia/nuxt'
+    '@pinia/nuxt',
+    '@vueuse/nuxt'
 ],
 components:[
     {
