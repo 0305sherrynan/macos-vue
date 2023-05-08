@@ -43,17 +43,12 @@ const openRightMenu = (e:MouseEvent)=>{
   background-position: center;
 
   .dock {
-    width: 39rem;
-    height: 4rem;
-    border-radius: 1rem;
     position: absolute;
     bottom: 1rem;
     left: 50%;
     transform: translateX(-50%);
-    
-    background-color: hsla(var(--system-color-light-hsl), 0.4);
-    box-shadow: inset 0 0 0 0.2px hsla(var(--system-color-grey-100-hsl), 0.7),
-      0 0 0 0.2px hsla(var(--system-color-grey-900-hsl), 0.7), hsla(0, 0%, 0%, 0.3) 2px 5px 19px 7px;
+
+
 
   }
 
