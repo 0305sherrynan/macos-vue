@@ -1,14 +1,22 @@
 import { defineStore, StoreDefinition } from 'pinia'
 import {appsID} from '~/configs/apps/apps.config'
-
-//需要永久存储的用户信息
-interface appStorage {
-
+interface appStoreIntf{
+    //是否打开对应的app
+    isOpenApp:Record<appsID,boolean>
+    //当前鼠标所在的app实例
+    activeAppInstance:appsID
 }
-
 export const useAppsStore = defineStore('apps', {
-    state: () => ({
-      
+    state: ():appStoreIntf => ({
+      isOpenApp:{
+        vscode:false,
+        github:false,
+        qq:false,
+        terminal:false,
+        chatgpt:false,
+        // 'avs':false
+      },
+      activeAppInstance:'vscode'
     }),
     getters:{
 
