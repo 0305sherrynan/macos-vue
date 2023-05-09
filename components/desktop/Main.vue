@@ -35,6 +35,7 @@ onMounted(()=>{
 <template>
   <div id="main" @click.right.native="openRightMenu" ref="Main">
     <MenubarDeskBar />
+    <DesktopWindowAera class="app-aera"/>
     <DockFrame class="dock"  />
     <DesktopContextMenu :XYpos="{xPage,yPage}" ref="contextMenuRef" :mainHeight="MainHeight?MainHeight:0"/>
   </div>
@@ -62,6 +63,9 @@ onMounted(()=>{
 
 
 
+  }
+  .app-aera{
+    
   }
 
 }
