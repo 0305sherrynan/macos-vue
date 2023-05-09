@@ -6,17 +6,17 @@ import {createAppHelper} from '~/helpers/create-app-helper'
  */
 const vscode = createAppHelper({
     title:'VSCode',
-    height:600,
-    width:800,
-    shouldOpenWindow:true,
-    externalBrowserFace:()=>window.open('https://developer.mozilla.org/','_blank')
+    height:27,
+    width:50,
+    shouldOpenWindow:false,
+    // externalBrowserFace:()=>window.open('https://developer.mozilla.org/','_blank')
 })
 const chatgpt = createAppHelper({
     title:'ChatGpt',
-    height:580,
-    width:800,
-    shouldOpenWindow:true,
-    externalBrowserFace:()=>window.open('https://developer.mozilla.org/','_blank')
+    height:27,
+    width:50,
+    shouldOpenWindow:false,
+    
 })
 const github = createAppHelper({
     title:'Github',
