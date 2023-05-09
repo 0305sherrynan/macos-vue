@@ -8,6 +8,7 @@
 
 <script setup lang="ts">
 import type { appHelper } from '~/helpers/create-app-helper'
+import {useAppsStore} from '~/store/Apps/apps'
 /**
  * isShowText 是否展示文字部分
  * dockItemRef 当前元素节点
@@ -19,6 +20,7 @@ import type { appHelper } from '~/helpers/create-app-helper'
  * preVnodeRef 上一个节点
  * emits 父子事件触发
  */
+const appStore= useAppsStore()
 const isShowText = ref<boolean>(false)
 const { appItem, AppID } = defineProps<{
     appItem: appHelper,
@@ -54,7 +56,6 @@ onMounted(() => {
         scale_height.value = default_height + default_height * scaleTimeMax * (1 - Math.abs(0.5 - offset.value)) + 'rem';
         //更换上一个节点的大小
         next_width.value = default_width + default_width * preScaleTimeMax * (1 - Math.abs(0.5 - offset.value)) + 'rem'
-        console.log(next_width.value)
         emits('itemMoveEmit',scale_width.value)
         // (preVnodeRef.value as HTMLElement).style.width = default_width + default_width * scaleTimeMax * (1 - Math.abs(0.5 - offset.value)) + 'rem'
     })
@@ -74,6 +75,9 @@ onMounted(() => {
  */
 const openApp = (e: MouseEvent) => {
     if (appItem.shouldOpenWindow) appItem.externalBrowserFace?.(e)
+    else{
+        appStore.isOpenApp[AppID] = true
+    }
 }
 const enterIcon = () => {
     isShowText.value = true
