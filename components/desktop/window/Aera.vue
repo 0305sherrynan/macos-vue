@@ -33,12 +33,12 @@ const focuEvent = (activeID: appsID) => {
     opacity: 0;
 }
 .vscode-enter-active{
-    transition: width 300ms linear;
-    transition: height 300ms linear;
+    transition: display 300ms linear;
+    
 }
 .vscode-leave-active{
-    transition: width 300ms linear;
-    transition: height 300ms linear;
+    transition: display 300ms linear;
+   
 }
 .vscode-leave-to{
     
