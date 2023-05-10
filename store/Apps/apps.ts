@@ -4,7 +4,7 @@ interface appStoreIntf{
     //是否打开对应的app
     isOpenApp:Record<appsID,boolean>
     //当前鼠标所在的app实例
-    activeAppInstance:appsID
+    activeAppInstance:appsID | ''
 }
 export const useAppsStore = defineStore('apps', {
     state: ():appStoreIntf => ({
@@ -16,7 +16,7 @@ export const useAppsStore = defineStore('apps', {
         chatgpt:false,
         // 'avs':false
       },
-      activeAppInstance:'vscode'
+      activeAppInstance:''
     }),
     getters:{
 
