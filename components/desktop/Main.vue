@@ -64,9 +64,8 @@ onMounted(()=>{
 
 
   }
-  .app-aera{
-    
-  }
+
+
 
 }
 </style>
