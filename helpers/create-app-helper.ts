@@ -2,8 +2,8 @@
 export type appHelper = {
     title:string
 
-    width?:string | number
-    height?:string | number
+    width?:number
+    height?: number
     shouldOpenWindow?:boolean
     resizable?:boolean
     expandable?:boolean
