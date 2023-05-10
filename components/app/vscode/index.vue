@@ -56,8 +56,8 @@ let { x, y, style }  = useDraggable(vscodeRef, {
 
 <style scoped>
 .vscode-box{
-    transition: all 1s linear;
-    transform-origin: center,center;
+    /* transition: all 1s linear;
+    transform-origin: center,center; */
     border-radius: .75rem;
     background-color: rgb(32, 35, 39);
     padding: .4rem;

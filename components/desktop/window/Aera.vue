@@ -2,7 +2,7 @@
     <div class="app-aera">
         <div class="inline-block relative">
             <Transition name="vscode">
-                <AppVscode v-if="isVscodeShow" class="vscode-app" @click="focuEvent('vscode')" />
+                <AppVscode v-show="isVscodeShow" class="vscode-app" @click="focuEvent('vscode')" />
             </Transition>
             <AppChatgpt v-if="isChatgptShow" @click="focuEvent('chatgpt')" />
         </div>
@@ -30,14 +30,14 @@ const focuEvent = (activeID: appsID) => {
 .vscode-enter-from{
     transform:scale(0,0);
     transform-origin: center,center;
-    opacity: 0;
+    opacity: 1;
 }
 .vscode-enter-active{
-    transition: display 300ms linear;
+    transition: all 300ms linear;
     
 }
 .vscode-leave-active{
-    transition: display 300ms linear;
+    transition: all 300ms linear;
    
 }
 .vscode-leave-to{
