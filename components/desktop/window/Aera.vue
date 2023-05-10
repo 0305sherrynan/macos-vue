@@ -1,7 +1,10 @@
 <template>
     <div class="app-aera">
-        <AppVscode v-if="isVscodeShow"  />
-        <AppChatgpt v-if="isChatgptShow"/>
+        <div class="inline-block relative" >
+             <AppVscode   v-if="isVscodeShow" class="vscode-app"/> 
+            <AppChatgpt v-if="isChatgptShow"/>
+            
+        </div>
     </div>
 </template>
 
@@ -13,11 +16,14 @@ const isChatgptShow = computed(()=>appStore.isOpenApp['chatgpt'])
 
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 .app-aera{
-    /* display: flex;
+     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center; */
+    align-items: center; 
+    .vscode-app{
+        position: fixed;
+    }
 }
 </style>
