@@ -1,7 +1,7 @@
 <template>
     <div class="traffic-circle">
 
-        <div class="closed" ref="closedRef">
+        <div class="closed" ref="closedRef" @click="closedCurrentWindow">
             <div v-show="isShowIcon">
                 <svg height="15" viewBox="0 0 48 48" width="15" xmlns="http://www.w3.org/2000/svg">
                     <path
@@ -25,8 +25,8 @@
 </template>
 
 <script setup lang="ts">
-
-
+import {useAppsStore} from '~/store/Apps/apps'
+const appStore = useAppsStore()
 /**
  * default_scale 默认红绿灯大小
  * current_scale [] 当前每个红绿灯大小
@@ -35,7 +35,7 @@
  * ele_arr 存放三个灯的dom
  * isShowIcon 是否展示图标
  */
-
+const emit = defineEmits(['btnClick'])
 const default_scale = 1
 const current_scale = reactive<Array<number>>([1, 1, 1])
 const enter_scale = 1.2
@@ -49,8 +49,13 @@ const cur_closed = computed(() => current_scale[0])
 const cur_reduce = computed(() => current_scale[1])
 const cur_full = computed(() => current_scale[2])
 
-
-
+/**
+ * method
+ * closedCurrentWindow 关闭当前窗口事件
+ */
+const closedCurrentWindow = ()=>{
+    emit('btnClick','closed')
+}
 /**
  *  监听三个灯的鼠标事件
  */
