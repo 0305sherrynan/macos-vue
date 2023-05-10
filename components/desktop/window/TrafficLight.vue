@@ -1,5 +1,5 @@
 <template>
-    <div class="traffic-circle ">
+    <div class="traffic-circle">
 
         <div class="closed" ref="closedRef">
             <div v-show="isShowIcon">
@@ -35,6 +35,7 @@
  * ele_arr 存放三个灯的dom
  * isShowIcon 是否展示图标
  */
+
 const default_scale = 1
 const current_scale = reactive<Array<number>>([1, 1, 1])
 const enter_scale = 1.2
@@ -44,11 +45,12 @@ const fullRef = ref<HTMLElement>()
 let ele_arr = new Array<Ref<HTMLElement | undefined>>
 const isShowIcon = ref<boolean>(false)
 ele_arr.push(closedRef, reduceRef, fullRef)
-
-
 const cur_closed = computed(() => current_scale[0])
 const cur_reduce = computed(() => current_scale[1])
 const cur_full = computed(() => current_scale[2])
+
+
+
 /**
  *  监听三个灯的鼠标事件
  */
