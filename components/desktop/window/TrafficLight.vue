@@ -16,7 +16,7 @@
             </div>
 
         </div>
-        <div class="full" ref="fullRef">
+        <div class="full" ref="fullRef" @click="fullCurrentWindow">
             <div v-show="isShowIcon">
                 <svg fill="none" height="15" stroke-width="1.5" viewBox="0 0 24 24" width="15" xmlns="http://www.w3.org/2000/svg"><path d="M4 20L9 15M9 15V19M9 15H5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/><path d="M20 4L15 9M15 9V5M15 9H19" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/></svg>
             </div>
@@ -52,9 +52,13 @@ const cur_full = computed(() => current_scale[2])
 /**
  * method
  * closedCurrentWindow 关闭当前窗口事件
+ * fullCurrentWindow 全屏当前窗口事件
  */
 const closedCurrentWindow = ()=>{
     emit('btnClick','closed')
+}
+const fullCurrentWindow = ()=>{
+    emit('btnClick','full')
 }
 /**
  *  监听三个灯的鼠标事件
