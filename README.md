@@ -48,5 +48,6 @@ Check out the [deployment documentation](https://nuxt.com/docs/getting-started/d
 - 工具库
   - vueuse
   - pinia
+  - vuetify 组件库
 ## 效果体验
 在线展示：[mac-nuxt](https://mac-nuxt.netlify.app/)

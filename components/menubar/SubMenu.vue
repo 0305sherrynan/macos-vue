@@ -4,10 +4,12 @@
             <button class="sub-each-row-span" :disabled="item['disabled']">{{ item['title'] }}</button>
             <div v-if="item['breakAfter']" class="divider"></div>
         </div>
+       
     </div>
 </template>
 
 <script setup lang="ts">
+
 const props = defineProps<{
     EachMenuItem: Object
 }>()
