@@ -16,6 +16,7 @@ const appStore = useAppsStore()
 const isVscodeShow = computed(() => appStore.isOpenApp['vscode'])
 const isChatgptShow = computed(() => appStore.isOpenApp['chatgpt'])
 
+
 /**
  * 
  */
@@ -54,6 +55,7 @@ const focuEvent = (activeID: appsID) => {
 
     .vscode-app {
         position: fixed;
+     
     }
 }
 </style>
