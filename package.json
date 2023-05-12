@@ -23,6 +23,7 @@
     "tailwindcss": "^3.3.2"
   },
   "dependencies": {
+    "@invictus.codes/nuxt-vuetify": "^0.2.20",
     "@pinia/nuxt": "^0.4.9",
     "@vueuse/nuxt": "^10.1.2",
     "pinia": "^2.0.35"

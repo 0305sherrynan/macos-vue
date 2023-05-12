@@ -13,5 +13,8 @@ $banana:blue;
     --system-color-primary-contrast: hsl(240, 24%, 100%);
     --system-color-grey-100-hsl: 0, 0%, 96%;
     --system-color-grey-900-hsl: 0, 0%, 13%;
-    // --additional-box-shadow:
+   
+    //control控件的颜色
+    --control-color-open:rgb(66, 110, 203);
+    --control-color-closed:rgb(195, 196, 200);
 }

@@ -48,12 +48,12 @@
     json5 "^2.2.2"
     semver "^6.3.0"
 
-"@babel/generator@^7.21.4":
-  version "7.21.4"
-  resolved "https://registry.npmmirror.com/@babel/generator/-/generator-7.21.4.tgz"
-  integrity sha512-NieM3pVIYW2SwGzKoqfPrQsf4xGs9M9AIG3ThppsSRmO+m7eQhmI6amajKMUeIO37wFfsvnvcxQFx6x6iqxDnA==
+"@babel/generator@^7.21.4", "@babel/generator@^7.21.5":
+  version "7.21.5"
+  resolved "https://registry.npmmirror.com/@babel/generator/-/generator-7.21.5.tgz"
+  integrity sha512-SrKK/sRv8GesIW1bDagf9cCG38IOMYZusoe1dfg0D8aiUe3Amvoj1QtjTPAWcfrZFvIwlleLb0gxzQidL9w14w==
   dependencies:
-    "@babel/types" "^7.21.4"
+    "@babel/types" "^7.21.5"
     "@jridgewell/gen-mapping" "^0.3.2"
     "@jridgewell/trace-mapping" "^0.3.17"
     jsesc "^2.5.1"
@@ -77,23 +77,24 @@
     semver "^6.3.0"
 
 "@babel/helper-create-class-features-plugin@^7.21.0":
-  version "7.21.4"
-  resolved "https://registry.npmmirror.com/@babel/helper-create-class-features-plugin/-/helper-create-class-features-plugin-7.21.4.tgz"
-  integrity sha512-46QrX2CQlaFRF4TkwfTt6nJD7IHq8539cCL7SDpqWSDeJKY1xylKKY5F/33mJhLZ3mFvKv2gGrVS6NkyF6qs+Q==
+  version "7.21.8"
+  resolved "https://registry.npmmirror.com/@babel/helper-create-class-features-plugin/-/helper-create-class-features-plugin-7.21.8.tgz"
+  integrity sha512-+THiN8MqiH2AczyuZrnrKL6cAxFRRQDKW9h1YkBvbgKmAm6mwiacig1qT73DHIWMGo40GRnsEfN3LA+E6NtmSw==
   dependencies:
     "@babel/helper-annotate-as-pure" "^7.18.6"
-    "@babel/helper-environment-visitor" "^7.18.9"
+    "@babel/helper-environment-visitor" "^7.21.5"
     "@babel/helper-function-name" "^7.21.0"
-    "@babel/helper-member-expression-to-functions" "^7.21.0"
+    "@babel/helper-member-expression-to-functions" "^7.21.5"
     "@babel/helper-optimise-call-expression" "^7.18.6"
-    "@babel/helper-replace-supers" "^7.20.7"
+    "@babel/helper-replace-supers" "^7.21.5"
     "@babel/helper-skip-transparent-expression-wrappers" "^7.20.0"
     "@babel/helper-split-export-declaration" "^7.18.6"
+    semver "^6.3.0"
 
-"@babel/helper-environment-visitor@^7.18.9":
-  version "7.18.9"
-  resolved "https://registry.npmmirror.com/@babel/helper-environment-visitor/-/helper-environment-visitor-7.18.9.tgz"
-  integrity sha512-3r/aACDJ3fhQ/EVgFy0hpj8oHyHpQc+LPtJoY9SzTThAsStm4Ptegq92vqKoE3vD706ZVFWITnMnxucw+S9Ipg==
+"@babel/helper-environment-visitor@^7.18.9", "@babel/helper-environment-visitor@^7.21.5":
+  version "7.21.5"
+  resolved "https://registry.npmmirror.com/@babel/helper-environment-visitor/-/helper-environment-visitor-7.21.5.tgz"
+  integrity sha512-IYl4gZ3ETsWocUWgsFZLM5i1BYx9SoemminVEXadgLBa9TdeorzgLKm8wWLA6J1N/kT3Kch8XIk1laNzYoHKvQ==
 
 "@babel/helper-function-name@^7.21.0":
   version "7.21.0"
@@ -110,12 +111,12 @@
   dependencies:
     "@babel/types" "^7.18.6"
 
-"@babel/helper-member-expression-to-functions@^7.20.7", "@babel/helper-member-expression-to-functions@^7.21.0":
-  version "7.21.0"
-  resolved "https://registry.npmmirror.com/@babel/helper-member-expression-to-functions/-/helper-member-expression-to-functions-7.21.0.tgz"
-  integrity sha512-Muu8cdZwNN6mRRNG6lAYErJ5X3bRevgYR2O8wN0yn7jJSnGDu6eG59RfT29JHxGUovyfrh6Pj0XzmR7drNVL3Q==
+"@babel/helper-member-expression-to-functions@^7.21.5":
+  version "7.21.5"
+  resolved "https://registry.npmmirror.com/@babel/helper-member-expression-to-functions/-/helper-member-expression-to-functions-7.21.5.tgz"
+  integrity sha512-nIcGfgwpH2u4n9GG1HpStW5Ogx7x7ekiFHbjjFRKXbn5zUvqO9ZgotCO4x1aNbKn/x/xOUaXEhyNHCwtFCpxWg==
   dependencies:
-    "@babel/types" "^7.21.0"
+    "@babel/types" "^7.21.5"
 
 "@babel/helper-module-imports@^7.0.0", "@babel/helper-module-imports@^7.18.6":
   version "7.21.4"
@@ -146,21 +147,21 @@
     "@babel/types" "^7.18.6"
 
 "@babel/helper-plugin-utils@^7.20.2":
-  version "7.20.2"
-  resolved "https://registry.npmmirror.com/@babel/helper-plugin-utils/-/helper-plugin-utils-7.20.2.tgz"
-  integrity sha512-8RvlJG2mj4huQ4pZ+rU9lqKi9ZKiRmuvGuM2HlWmkmgOhbs6zEAw6IEiJ5cQqGbDzGZOhwuOQNtZMi/ENLjZoQ==
+  version "7.21.5"
+  resolved "https://registry.npmmirror.com/@babel/helper-plugin-utils/-/helper-plugin-utils-7.21.5.tgz"
+  integrity sha512-0WDaIlXKOX/3KfBK/dwP1oQGiPh6rjMkT7HIRv7i5RR2VUMwrx5ZL0dwBkKx7+SW1zwNdgjHd34IMk5ZjTeHVg==
 
-"@babel/helper-replace-supers@^7.20.7":
-  version "7.20.7"
-  resolved "https://registry.npmmirror.com/@babel/helper-replace-supers/-/helper-replace-supers-7.20.7.tgz"
-  integrity sha512-vujDMtB6LVfNW13jhlCrp48QNslK6JXi7lQG736HVbHz/mbf4Dc7tIRh1Xf5C0rF7BP8iiSxGMCmY6Ci1ven3A==
+"@babel/helper-replace-supers@^7.21.5":
+  version "7.21.5"
+  resolved "https://registry.npmmirror.com/@babel/helper-replace-supers/-/helper-replace-supers-7.21.5.tgz"
+  integrity sha512-/y7vBgsr9Idu4M6MprbOVUfH3vs7tsIfnVWv/Ml2xgwvyH6LTngdfbf5AdsKwkJy4zgy1X/kuNrEKvhhK28Yrg==
   dependencies:
-    "@babel/helper-environment-visitor" "^7.18.9"
-    "@babel/helper-member-expression-to-functions" "^7.20.7"
+    "@babel/helper-environment-visitor" "^7.21.5"
+    "@babel/helper-member-expression-to-functions" "^7.21.5"
     "@babel/helper-optimise-call-expression" "^7.18.6"
     "@babel/template" "^7.20.7"
-    "@babel/traverse" "^7.20.7"
-    "@babel/types" "^7.20.7"
+    "@babel/traverse" "^7.21.5"
+    "@babel/types" "^7.21.5"
 
 "@babel/helper-simple-access@^7.20.2":
   version "7.20.2"
@@ -183,10 +184,10 @@
   dependencies:
     "@babel/types" "^7.18.6"
 
-"@babel/helper-string-parser@^7.19.4":
-  version "7.19.4"
-  resolved "https://registry.npmmirror.com/@babel/helper-string-parser/-/helper-string-parser-7.19.4.tgz"
-  integrity sha512-nHtDoQcuqFmwYNYPz3Rah5ph2p8PFeFCsZk9A/48dPc/rGocJ5J3hAAZ7pb76VWX3fZKu+uEr/FhH5jLx7umrw==
+"@babel/helper-string-parser@^7.21.5":
+  version "7.21.5"
+  resolved "https://registry.npmmirror.com/@babel/helper-string-parser/-/helper-string-parser-7.21.5.tgz"
+  integrity sha512-5pTUx3hAJaZIdW99sJ6ZUUgWq/Y+Hja7TowEnLNMm1VivRgZQL3vpBY3qUACVsvw+yQU6+YgfBVmcbLaZtrA1w==
 
 "@babel/helper-validator-identifier@^7.18.6", "@babel/helper-validator-identifier@^7.19.1":
   version "7.19.1"
@@ -216,10 +217,10 @@
     chalk "^2.0.0"
     js-tokens "^4.0.0"
 
-"@babel/parser@^7.1.0", "@babel/parser@^7.16.4", "@babel/parser@^7.20.7", "@babel/parser@^7.21.4":
-  version "7.21.4"
-  resolved "https://registry.npmmirror.com/@babel/parser/-/parser-7.21.4.tgz"
-  integrity sha512-alVJj7k7zIxqBZ7BTRhz0IqJFxW1VJbm6N8JbcYhQ186df9ZBPbZBmWSqAMXwHGsCJdYks7z/voa3ibiS5bCIw==
+"@babel/parser@^7.1.0", "@babel/parser@^7.20.15", "@babel/parser@^7.20.7", "@babel/parser@^7.21.3", "@babel/parser@^7.21.4", "@babel/parser@^7.21.5":
+  version "7.21.8"
+  resolved "https://registry.npmmirror.com/@babel/parser/-/parser-7.21.8.tgz"
+  integrity sha512-6zavDGdzG3gUqAdWvlLFfk+36RilI+Pwyuuh7HItyeScCWP3k6i8vKclAQ0bM/0y/Kz/xiwvxhMv9MgTJP5gmA==
 
 "@babel/plugin-syntax-jsx@^7.0.0":
   version "7.21.4"
@@ -259,28 +260,28 @@
     "@babel/parser" "^7.20.7"
     "@babel/types" "^7.20.7"
 
-"@babel/traverse@^7.0.0", "@babel/traverse@^7.20.7", "@babel/traverse@^7.21.0", "@babel/traverse@^7.21.2", "@babel/traverse@^7.21.4":
-  version "7.21.4"
-  resolved "https://registry.npmmirror.com/@babel/traverse/-/traverse-7.21.4.tgz"
-  integrity sha512-eyKrRHKdyZxqDm+fV1iqL9UAHMoIg0nDaGqfIOd8rKH17m5snv7Gn4qgjBoFfLz9APvjFU/ICT00NVCv1Epp8Q==
+"@babel/traverse@^7.0.0", "@babel/traverse@^7.21.0", "@babel/traverse@^7.21.2", "@babel/traverse@^7.21.4", "@babel/traverse@^7.21.5":
+  version "7.21.5"
+  resolved "https://registry.npmmirror.com/@babel/traverse/-/traverse-7.21.5.tgz"
+  integrity sha512-AhQoI3YjWi6u/y/ntv7k48mcrCXmus0t79J9qPNlk/lAsFlCiJ047RmbfMOawySTHtywXhbXgpx/8nXMYd+oFw==
   dependencies:
     "@babel/code-frame" "^7.21.4"
-    "@babel/generator" "^7.21.4"
-    "@babel/helper-environment-visitor" "^7.18.9"
+    "@babel/generator" "^7.21.5"
+    "@babel/helper-environment-visitor" "^7.21.5"
     "@babel/helper-function-name" "^7.21.0"
     "@babel/helper-hoist-variables" "^7.18.6"
     "@babel/helper-split-export-declaration" "^7.18.6"
-    "@babel/parser" "^7.21.4"
-    "@babel/types" "^7.21.4"
+    "@babel/parser" "^7.21.5"
+    "@babel/types" "^7.21.5"
     debug "^4.1.0"
     globals "^11.1.0"
 
-"@babel/types@^7.0.0", "@babel/types@^7.18.6", "@babel/types@^7.20.0", "@babel/types@^7.20.2", "@babel/types@^7.20.7", "@babel/types@^7.21.0", "@babel/types@^7.21.2", "@babel/types@^7.21.3", "@babel/types@^7.21.4", "@babel/types@^7.3.0":
-  version "7.21.4"
-  resolved "https://registry.npmmirror.com/@babel/types/-/types-7.21.4.tgz"
-  integrity sha512-rU2oY501qDxE8Pyo7i/Orqma4ziCOrby0/9mvbDUGEfvZjb279Nk9k19e2fiCxHbRRpY2ZyrgW1eq22mvmOIzA==
+"@babel/types@^7.0.0", "@babel/types@^7.18.6", "@babel/types@^7.20.0", "@babel/types@^7.20.2", "@babel/types@^7.20.7", "@babel/types@^7.21.0", "@babel/types@^7.21.2", "@babel/types@^7.21.3", "@babel/types@^7.21.4", "@babel/types@^7.21.5", "@babel/types@^7.3.0":
+  version "7.21.5"
+  resolved "https://registry.npmmirror.com/@babel/types/-/types-7.21.5.tgz"
+  integrity sha512-m4AfNvVF2mVC/F7fDEdH2El3HzUg9It/XsCxZiOTTA3m3qYfcSVSbTfM6Q9xG+hYDniZssYhlXKKUMD5m8tF4Q==
   dependencies:
-    "@babel/helper-string-parser" "^7.19.4"
+    "@babel/helper-string-parser" "^7.21.5"
     "@babel/helper-validator-identifier" "^7.19.1"
     to-fast-properties "^2.0.0"
 
@@ -421,6 +422,16 @@
   resolved "https://registry.npmmirror.com/@esbuild/win32-x64/-/win32-x64-0.17.18.tgz"
   integrity sha512-qU25Ma1I3NqTSHJUOKi9sAH1/Mzuvlke0ioMJRthLXKm7JiSKVwFghlGbDLOO2sARECGhja4xYfRAZNPAkooYg==
 
+"@invictus.codes/nuxt-vuetify@^0.2.20":
+  version "0.2.20"
+  resolved "https://registry.npmmirror.com/@invictus.codes/nuxt-vuetify/-/nuxt-vuetify-0.2.20.tgz#cabcd21b7fad2598148e40e4d630e2ef50fc6ffb"
+  integrity sha512-Q6c/aWfuK0cntG6cQo4FkbXNsI63D4O80v0MOtxKLap98P8cWFKrznycbGHrHkeeqADWehZii94XjmDhrT8Fkw==
+  dependencies:
+    "@nuxt/kit" "^3.3.2"
+    defu "^6.1.2"
+    vite-plugin-vuetify "^1.0.2"
+    vuetify "^3.1.12"
+
 "@ioredis/commands@^1.1.1":
   version "1.2.0"
   resolved "https://registry.npmmirror.com/@ioredis/commands/-/commands-1.2.0.tgz"
@@ -530,33 +541,9 @@
   resolved "https://registry.npmmirror.com/@nuxt/devalue/-/devalue-2.0.0.tgz"
   integrity sha512-YBI/6o2EBz02tdEJRBK8xkt3zvOFOWlLBf7WKYGBsSYSRtjjgrqPe2skp6VLLmKx5WbHHDNcW+6oACaurxGzeA==
 
-"@nuxt/kit@3.4.2", "@nuxt/kit@^3.0.0", "@nuxt/kit@^3.3.3", "@nuxt/kit@^3.4.2":
-  version "3.4.2"
-  resolved "https://registry.npmmirror.com/@nuxt/kit/-/kit-3.4.2.tgz"
-  integrity sha512-bFUpkyG2ZF6RYqiW+tXnWssccHQQqMF4kZJJLP/0eKXf+Fkt/Is0R7IY768jy8ylnyqeMBbmpg4Zv5gSZjfZQw==
-  dependencies:
-    "@nuxt/schema" "3.4.2"
-    c12 "^1.4.1"
-    consola "^3.1.0"
-    defu "^6.1.2"
-    globby "^13.1.4"
-    hash-sum "^2.0.0"
-    ignore "^5.2.4"
-    jiti "^1.18.2"
-    knitwork "^1.0.0"
-    lodash.template "^4.5.0"
-    mlly "^1.2.0"
-    pathe "^1.1.0"
-    pkg-types "^1.0.2"
-    scule "^1.0.0"
-    semver "^7.5.0"
-    unctx "^2.3.0"
-    unimport "^3.0.6"
-    untyped "^1.3.2"
-
-"@nuxt/kit@3.4.3", "@nuxt/kit@^3.4.3":
+"@nuxt/kit@3.4.3", "@nuxt/kit@^3.0.0", "@nuxt/kit@^3.3.2", "@nuxt/kit@^3.3.3", "@nuxt/kit@^3.4.2", "@nuxt/kit@^3.4.3":
   version "3.4.3"
-  resolved "https://registry.npmmirror.com/@nuxt/kit/-/kit-3.4.3.tgz#2ab6efb0a4db7b4e5f4d8d7d7e696fa30a6e8771"
+  resolved "https://registry.npmmirror.com/@nuxt/kit/-/kit-3.4.3.tgz"
   integrity sha512-aQyzplYFCL292UsVZzlOZOC51ZKYFL0PBihbcPzxTzXQvAfMF8/DQ539kqzqXzxTCcmnUB9ROhIaNUrAeUkFYA==
   dependencies:
     "@nuxt/schema" "3.4.3"
@@ -592,24 +579,9 @@
     postcss-url "^10.1.1"
     semver "^7.3.4"
 
-"@nuxt/schema@3.4.2":
-  version "3.4.2"
-  resolved "https://registry.npmmirror.com/@nuxt/schema/-/schema-3.4.2.tgz"
-  integrity sha512-DXB/fyjrAssFt9KGXyS+ZSfm1A0NYKhEoc01wyz1lGo//oETzUh3MmwE6X3x65NPqDlYZ6Mnj+IdftRRophv5Q==
-  dependencies:
-    defu "^6.1.2"
-    hookable "^5.5.3"
-    pathe "^1.1.0"
-    pkg-types "^1.0.2"
-    postcss-import-resolver "^2.0.0"
-    std-env "^3.3.2"
-    ufo "^1.1.1"
-    unimport "^3.0.6"
-    untyped "^1.3.2"
-
 "@nuxt/schema@3.4.3":
   version "3.4.3"
-  resolved "https://registry.npmmirror.com/@nuxt/schema/-/schema-3.4.3.tgz#106548003b7bbc40428b2af290b31b1e89acffc5"
+  resolved "https://registry.npmmirror.com/@nuxt/schema/-/schema-3.4.3.tgz"
   integrity sha512-8bv0/mRDw6THQguSz+cKG5FzDZc2XBkjcc5VZ7yET84r4aWzW9/R274cjlEagFKrw9BDaPEQhnkwpg+kZnpOUA==
   dependencies:
     defu "^6.1.2"
@@ -684,49 +656,9 @@
   resolved "https://registry.npmmirror.com/@nuxt/ui-templates/-/ui-templates-1.1.1.tgz"
   integrity sha512-PjVETP7+iZXAs5Q8O4ivl4t6qjWZMZqwiTVogUXHoHGZZcw7GZW3u3tzfYfE1HbzyYJfr236IXqQ02MeR8Fz2w==
 
-"@nuxt/vite-builder@3.4.2":
-  version "3.4.2"
-  resolved "https://registry.npmmirror.com/@nuxt/vite-builder/-/vite-builder-3.4.2.tgz"
-  integrity sha512-uLyy0sklOvGqj+yHAxSBE+wxyHvHZmYEfFjx03UEdMbYwpJlhPcqrt0pnWFJAkPWf8ZgpKymr8LNngsyYtNtAA==
-  dependencies:
-    "@nuxt/kit" "3.4.2"
-    "@rollup/plugin-replace" "^5.0.2"
-    "@vitejs/plugin-vue" "^4.1.0"
-    "@vitejs/plugin-vue-jsx" "^3.0.1"
-    autoprefixer "^10.4.14"
-    clear "^0.1.0"
-    cssnano "^6.0.0"
-    defu "^6.1.2"
-    esbuild "^0.17.17"
-    escape-string-regexp "^5.0.0"
-    estree-walker "^3.0.3"
-    externality "^1.0.0"
-    fs-extra "^11.1.1"
-    get-port-please "^3.0.1"
-    h3 "^1.6.4"
-    knitwork "^1.0.0"
-    magic-string "^0.30.0"
-    mlly "^1.2.0"
-    ohash "^1.1.1"
-    pathe "^1.1.0"
-    perfect-debounce "^0.1.3"
-    pkg-types "^1.0.2"
-    postcss "^8.4.23"
-    postcss-import "^15.1.0"
-    postcss-url "^10.1.3"
-    rollup-plugin-visualizer "^5.9.0"
-    std-env "^3.3.2"
-    strip-literal "^1.0.1"
-    ufo "^1.1.1"
-    unplugin "^1.3.1"
-    vite "~4.3.0"
-    vite-node "^0.30.1"
-    vite-plugin-checker "^0.5.6"
-    vue-bundle-renderer "^1.0.3"
-
 "@nuxt/vite-builder@3.4.3":
   version "3.4.3"
-  resolved "https://registry.npmmirror.com/@nuxt/vite-builder/-/vite-builder-3.4.3.tgz#ab6f969e8a15c39930836ab6e6e19e2440dc3d19"
+  resolved "https://registry.npmmirror.com/@nuxt/vite-builder/-/vite-builder-3.4.3.tgz"
   integrity sha512-60bXtjEILon0vJ8bC1cpZyV7GiCMlLiji/g/Q55mfsTYHH/1cgTG4UCodbGAZfDouZyyG8D4IrZ3lcizp3Zp9Q==
   dependencies:
     "@nuxt/kit" "3.4.3"
@@ -1105,7 +1037,7 @@
 
 "@types/web-bluetooth@^0.0.17":
   version "0.0.17"
-  resolved "https://registry.npmmirror.com/@types/web-bluetooth/-/web-bluetooth-0.0.17.tgz#5c9f3c617f64a9735d7b72a7cc671e166d900c40"
+  resolved "https://registry.npmmirror.com/@types/web-bluetooth/-/web-bluetooth-0.0.17.tgz"
   integrity sha512-4p9vcSmxAayx72yn70joFoL44c9MO/0+iVEBIQXe3v2h2SiAsEIo/G5v6ObFWvNKRFjbrVadNf9LqEEZeQPzdA==
 
 "@types/webpack-bundle-analyzer@3.9.5":
@@ -1211,10 +1143,10 @@
     "@babel/plugin-transform-typescript" "^7.20.7"
     "@vue/babel-plugin-jsx" "^1.1.1"
 
-"@vitejs/plugin-vue@^4.1.0", "@vitejs/plugin-vue@^4.2.1":
-  version "4.2.1"
-  resolved "https://registry.npmmirror.com/@vitejs/plugin-vue/-/plugin-vue-4.2.1.tgz"
-  integrity sha512-ZTZjzo7bmxTRTkb8GSTwkPOYDIP7pwuyV+RV53c9PYUouwcbkIZIvWvNWlX2b1dYZqtOv7D6iUAnJLVNGcLrSw==
+"@vitejs/plugin-vue@^4.2.1":
+  version "4.2.2"
+  resolved "https://registry.npmmirror.com/@vitejs/plugin-vue/-/plugin-vue-4.2.2.tgz"
+  integrity sha512-kNH4wMAqs13UiZe/2If1ioO0Mjz71rr2oALTl2c5ajBIox9Vz/UGW/wGkr7GA3SC6Eb29c1HtzAtxdGfbXAkfQ==
 
 "@vue/babel-helper-vue-transform-on@^1.0.2":
   version "1.0.2"
@@ -1236,104 +1168,117 @@
     html-tags "^3.1.0"
     svg-tags "^1.0.0"
 
-"@vue/compiler-core@3.2.47":
-  version "3.2.47"
-  resolved "https://registry.npmmirror.com/@vue/compiler-core/-/compiler-core-3.2.47.tgz"
-  integrity sha512-p4D7FDnQb7+YJmO2iPEv0SQNeNzcbHdGByJDsT4lynf63AFkOTFN07HsiRSvjGo0QrxR/o3d0hUyNCUnBU2Tig==
+"@vue/compiler-core@3.3.1":
+  version "3.3.1"
+  resolved "https://registry.npmmirror.com/@vue/compiler-core/-/compiler-core-3.3.1.tgz#4e60a13a4dc65dd1f70e19d30f3746d4f9367af2"
+  integrity sha512-5le1qYSBgLWg2jdLrbydlhnPJkkzMw46UrRUvTnOKlfg6pThtm9ohhqBhNPHbr0RcM1MCbK5WZe/3Ghz0SZjpQ==
   dependencies:
-    "@babel/parser" "^7.16.4"
-    "@vue/shared" "3.2.47"
+    "@babel/parser" "^7.21.3"
+    "@vue/shared" "3.3.1"
     estree-walker "^2.0.2"
-    source-map "^0.6.1"
+    source-map-js "^1.0.2"
 
-"@vue/compiler-dom@3.2.47":
-  version "3.2.47"
-  resolved "https://registry.npmmirror.com/@vue/compiler-dom/-/compiler-dom-3.2.47.tgz"
-  integrity sha512-dBBnEHEPoftUiS03a4ggEig74J2YBZ2UIeyfpcRM2tavgMWo4bsEfgCGsu+uJIL/vax9S+JztH8NmQerUo7shQ==
+"@vue/compiler-dom@3.3.1":
+  version "3.3.1"
+  resolved "https://registry.npmmirror.com/@vue/compiler-dom/-/compiler-dom-3.3.1.tgz#2d94431071377ace74c770aafb6ab2d62205b336"
+  integrity sha512-VmgIsoLivCft3+oNc5KM7b9wd0nZxP/g2qilMwi1hJyGA624KWnNKHn4hzBQs4FpzydUVpNy+TWVT8KiRCh3MQ==
   dependencies:
-    "@vue/compiler-core" "3.2.47"
-    "@vue/shared" "3.2.47"
+    "@vue/compiler-core" "3.3.1"
+    "@vue/shared" "3.3.1"
 
-"@vue/compiler-sfc@3.2.47":
-  version "3.2.47"
-  resolved "https://registry.npmmirror.com/@vue/compiler-sfc/-/compiler-sfc-3.2.47.tgz"
-  integrity sha512-rog05W+2IFfxjMcFw10tM9+f7i/+FFpZJJ5XHX72NP9eC2uRD+42M3pYcQqDXVYoj74kHMSEdQ/WmCjt8JFksQ==
+"@vue/compiler-sfc@3.3.1":
+  version "3.3.1"
+  resolved "https://registry.npmmirror.com/@vue/compiler-sfc/-/compiler-sfc-3.3.1.tgz#16a614fe9c85f35ca0e4333793441edb126323fc"
+  integrity sha512-G+FPwBbXSLaA4+Ry5/bdD9Oda+sRslQcE9o6JSZaougRiT4OjVL0vtkbQHPrGRTULZV28OcrAjRfSZOSB0OTXQ==
   dependencies:
-    "@babel/parser" "^7.16.4"
-    "@vue/compiler-core" "3.2.47"
-    "@vue/compiler-dom" "3.2.47"
-    "@vue/compiler-ssr" "3.2.47"
-    "@vue/reactivity-transform" "3.2.47"
-    "@vue/shared" "3.2.47"
+    "@babel/parser" "^7.20.15"
+    "@vue/compiler-core" "3.3.1"
+    "@vue/compiler-dom" "3.3.1"
+    "@vue/compiler-ssr" "3.3.1"
+    "@vue/reactivity-transform" "3.3.1"
+    "@vue/shared" "3.3.1"
     estree-walker "^2.0.2"
-    magic-string "^0.25.7"
+    magic-string "^0.30.0"
     postcss "^8.1.10"
-    source-map "^0.6.1"
+    source-map-js "^1.0.2"
 
-"@vue/compiler-ssr@3.2.47":
-  version "3.2.47"
-  resolved "https://registry.npmmirror.com/@vue/compiler-ssr/-/compiler-ssr-3.2.47.tgz"
-  integrity sha512-wVXC+gszhulcMD8wpxMsqSOpvDZ6xKXSVWkf50Guf/S+28hTAXPDYRTbLQ3EDkOP5Xz/+SY37YiwDquKbJOgZw==
+"@vue/compiler-ssr@3.3.1":
+  version "3.3.1"
+  resolved "https://registry.npmmirror.com/@vue/compiler-ssr/-/compiler-ssr-3.3.1.tgz#4572a5ff79fefd1ba68cb57f024763f5d004f7b3"
+  integrity sha512-QOQWGNCWuSeyKx4KvWSJlnIMGg+/2oCHgkFUYo7aJ+9Uaaz45yRgKQ+FNigy50NYBQIhpXn2e4OSR8GXh4knrQ==
   dependencies:
-    "@vue/compiler-dom" "3.2.47"
-    "@vue/shared" "3.2.47"
+    "@vue/compiler-dom" "3.3.1"
+    "@vue/shared" "3.3.1"
 
 "@vue/devtools-api@^6.4.5", "@vue/devtools-api@^6.5.0":
   version "6.5.0"
   resolved "https://registry.npmmirror.com/@vue/devtools-api/-/devtools-api-6.5.0.tgz"
   integrity sha512-o9KfBeaBmCKl10usN4crU53fYtC1r7jJwdGKjPT24t348rHxgfpZ0xL3Xm/gLUYnc0oTp8LAmrxOeLyu6tbk2Q==
 
-"@vue/reactivity-transform@3.2.47":
-  version "3.2.47"
-  resolved "https://registry.npmmirror.com/@vue/reactivity-transform/-/reactivity-transform-3.2.47.tgz"
-  integrity sha512-m8lGXw8rdnPVVIdIFhf0LeQ/ixyHkH5plYuS83yop5n7ggVJU+z5v0zecwEnX7fa7HNLBhh2qngJJkxpwEEmYA==
+"@vue/reactivity-transform@3.3.1":
+  version "3.3.1"
+  resolved "https://registry.npmmirror.com/@vue/reactivity-transform/-/reactivity-transform-3.3.1.tgz#35000e3bd4d481b228e5f0b97eb652ec9e6894dc"
+  integrity sha512-MkOrJauAGH4MNdxGW/PmrDegMyOGX0wGIdKUZJRBXOTpotDONg7/TPJe2QeGeBCow/5v9iOqZOWCfvmOWIaDMg==
   dependencies:
-    "@babel/parser" "^7.16.4"
-    "@vue/compiler-core" "3.2.47"
-    "@vue/shared" "3.2.47"
+    "@babel/parser" "^7.20.15"
+    "@vue/compiler-core" "3.3.1"
+    "@vue/shared" "3.3.1"
     estree-walker "^2.0.2"
-    magic-string "^0.25.7"
+    magic-string "^0.30.0"
 
-"@vue/reactivity@3.2.47":
-  version "3.2.47"
-  resolved "https://registry.npmmirror.com/@vue/reactivity/-/reactivity-3.2.47.tgz"
-  integrity sha512-7khqQ/75oyyg+N/e+iwV6lpy1f5wq759NdlS1fpAhFXa8VeAIKGgk2E/C4VF59lx5b+Ezs5fpp/5WsRYXQiKxQ==
+"@vue/reactivity@3.3.1":
+  version "3.3.1"
+  resolved "https://registry.npmmirror.com/@vue/reactivity/-/reactivity-3.3.1.tgz#b134186493113f9f8c3fb6d65a047e19825a46e1"
+  integrity sha512-zCfmazOtyUdC1NS/EPiSYJ4RqojqmTAviJyBbyVvY8zAv5NhK44Yfw0E1tt+m5vz0ZO1ptI9jDKBr3MWIEkpgw==
   dependencies:
-    "@vue/shared" "3.2.47"
+    "@vue/shared" "3.3.1"
 
-"@vue/runtime-core@3.2.47":
-  version "3.2.47"
-  resolved "https://registry.npmmirror.com/@vue/runtime-core/-/runtime-core-3.2.47.tgz"
-  integrity sha512-RZxbLQIRB/K0ev0K9FXhNbBzT32H9iRtYbaXb0ZIz2usLms/D55dJR2t6cIEUn6vyhS3ALNvNthI+Q95C+NOpA==
+"@vue/runtime-core@3.3.1":
+  version "3.3.1"
+  resolved "https://registry.npmmirror.com/@vue/runtime-core/-/runtime-core-3.3.1.tgz#ed244dcb48d4e1e2079bf7d698a218e5b8ef5f62"
+  integrity sha512-Ljb37LYafhQqKIasc0r32Cva8gIh6VeSMjlwO6V03tCjHd18gmjP0F4UD+8/a59sGTysAgA8Rb9lIC2DVxRz2Q==
   dependencies:
-    "@vue/reactivity" "3.2.47"
-    "@vue/shared" "3.2.47"
+    "@vue/reactivity" "3.3.1"
+    "@vue/shared" "3.3.1"
 
-"@vue/runtime-dom@3.2.47":
-  version "3.2.47"
-  resolved "https://registry.npmmirror.com/@vue/runtime-dom/-/runtime-dom-3.2.47.tgz"
-  integrity sha512-ArXrFTjS6TsDei4qwNvgrdmHtD930KgSKGhS5M+j8QxXrDJYLqYw4RRcDy1bz1m1wMmb6j+zGLifdVHtkXA7gA==
+"@vue/runtime-dom@3.3.1":
+  version "3.3.1"
+  resolved "https://registry.npmmirror.com/@vue/runtime-dom/-/runtime-dom-3.3.1.tgz#c07aef5b72385a2f22fdc82a203db6eba7f39fb4"
+  integrity sha512-NBjYbQPtMklb7lsJsM2Juv5Ygry6mvZP7PdH1GZqrzfLkvlplQT3qCtQMd/sib6yiy8t9m/Y4hVU7X9nzb9Oeg==
   dependencies:
-    "@vue/runtime-core" "3.2.47"
-    "@vue/shared" "3.2.47"
-    csstype "^2.6.8"
+    "@vue/runtime-core" "3.3.1"
+    "@vue/shared" "3.3.1"
+    csstype "^3.1.1"
 
-"@vue/server-renderer@3.2.47":
-  version "3.2.47"
-  resolved "https://registry.npmmirror.com/@vue/server-renderer/-/server-renderer-3.2.47.tgz"
-  integrity sha512-dN9gc1i8EvmP9RCzvneONXsKfBRgqFeFZLurmHOveL7oH6HiFXJw5OGu294n1nHc/HMgTy6LulU/tv5/A7f/LA==
+"@vue/server-renderer@3.3.1":
+  version "3.3.1"
+  resolved "https://registry.npmmirror.com/@vue/server-renderer/-/server-renderer-3.3.1.tgz#c750a775ca4abd8213748a540cce7344af00dac4"
+  integrity sha512-sod8ggOwbkQXw3lBjfzrbdxRS9lw/lNHoMaXghHawNYowf+4WoaLWD5ouz6fPZadUqNKAsqK95p8DYb1vcVfPA==
   dependencies:
-    "@vue/compiler-ssr" "3.2.47"
-    "@vue/shared" "3.2.47"
+    "@vue/compiler-ssr" "3.3.1"
+    "@vue/shared" "3.3.1"
 
-"@vue/shared@3.2.47", "@vue/shared@^3.2.47":
+"@vue/shared@3.3.1":
+  version "3.3.1"
+  resolved "https://registry.npmmirror.com/@vue/shared/-/shared-3.3.1.tgz#875a1c1847ec0646fc3dbe5581cb46b49ca3c469"
+  integrity sha512-ybDBtQ+479HL/bkeIOIAwgpeAEACzztkvulJLbK3JMFuTOv4qDivmV3AIsR8RHYJ+RD9tQxcHWBsX4GqEcYrfw==
+
+"@vue/shared@^3.2.47":
   version "3.2.47"
   resolved "https://registry.npmmirror.com/@vue/shared/-/shared-3.2.47.tgz"
   integrity sha512-BHGyyGN3Q97EZx0taMQ+OLNuZcW3d37ZEVmEAyeoA9ERdGvm9Irc/0Fua8SNyOtV1w6BS4q25wbMzJujO9HIfQ==
 
+"@vuetify/loader-shared@^1.7.1":
+  version "1.7.1"
+  resolved "https://registry.npmmirror.com/@vuetify/loader-shared/-/loader-shared-1.7.1.tgz#0f63a3d41b6df29a2db1ff438aa1819b237c37a3"
+  integrity sha512-kLUvuAed6RCvkeeTNJzuy14pqnkur8lTuner7v7pNE/kVhPR97TuyXwBSBMR1cJeiLiOfu6SF5XlCYbXByEx1g==
+  dependencies:
+    find-cache-dir "^3.3.2"
+    upath "^2.0.1"
+
 "@vueuse/core@10.1.2":
   version "10.1.2"
-  resolved "https://registry.npmmirror.com/@vueuse/core/-/core-10.1.2.tgz#2499eadec36c5d7109338e3a2b73725040ae8011"
+  resolved "https://registry.npmmirror.com/@vueuse/core/-/core-10.1.2.tgz"
   integrity sha512-roNn8WuerI56A5uiTyF/TEYX0Y+VKlhZAF94unUfdhbDUI+NfwQMn4FUnUscIRUhv3344qvAghopU4bzLPNFlA==
   dependencies:
     "@types/web-bluetooth" "^0.0.17"
@@ -1343,12 +1288,12 @@
 
 "@vueuse/metadata@10.1.2":
   version "10.1.2"
-  resolved "https://registry.npmmirror.com/@vueuse/metadata/-/metadata-10.1.2.tgz#d8ffe557b1042efd03a0aa88540a00c25d193ee3"
+  resolved "https://registry.npmmirror.com/@vueuse/metadata/-/metadata-10.1.2.tgz"
   integrity sha512-3mc5BqN9aU2SqBeBuWE7ne4OtXHoHKggNgxZR2K+zIW4YLsy6xoZ4/9vErQs6tvoKDX6QAqm3lvsrv0mczAwIQ==
 
 "@vueuse/nuxt@^10.1.2":
   version "10.1.2"
-  resolved "https://registry.npmmirror.com/@vueuse/nuxt/-/nuxt-10.1.2.tgz#2cd91471bba8ea5d27f2f97658451dbf9730e47b"
+  resolved "https://registry.npmmirror.com/@vueuse/nuxt/-/nuxt-10.1.2.tgz"
   integrity sha512-X9o5WCmNs1+6XztP1Uh9+H7/jGeIjwSRNQdwCWRKCDkxPlbgi9iLnDRYnKDY++JPY3nbB6jTDOVgZDrpaAU5kg==
   dependencies:
     "@nuxt/kit" "^3.4.3"
@@ -1360,7 +1305,7 @@
 
 "@vueuse/shared@10.1.2":
   version "10.1.2"
-  resolved "https://registry.npmmirror.com/@vueuse/shared/-/shared-10.1.2.tgz#31d8733a217a6396eb67706319133bf62cdd8baa"
+  resolved "https://registry.npmmirror.com/@vueuse/shared/-/shared-10.1.2.tgz"
   integrity sha512-1uoUTPBlgyscK9v6ScGeVYDDzlPSFXBlxuK7SfrDGyUTBiznb3mNceqhwvZHjtDRELZEN79V5uWPTF1VDV8svA==
   dependencies:
     vue-demi ">=0.14.0"
@@ -2076,14 +2021,14 @@ cssesc@^3.0.0:
   resolved "https://registry.npmmirror.com/cssesc/-/cssesc-3.0.0.tgz"
   integrity sha512-/Tb/JcjK111nNScGob5MNtsntNM1aCNUDipB/TkwZFhyDrrE47SOx/18wF2bbjgc3ZzCSKW1T5nt5EbFoAz/Vg==
 
-cssnano-preset-default@^6.0.0:
-  version "6.0.0"
-  resolved "https://registry.npmmirror.com/cssnano-preset-default/-/cssnano-preset-default-6.0.0.tgz"
-  integrity sha512-BDxlaFzObRDXUiCCBQUNQcI+f1/aX2mgoNtXGjV6PG64POcHoDUoX+LgMWw+Q4609QhxwkcSnS65YFs42RA6qQ==
+cssnano-preset-default@^6.0.1:
+  version "6.0.1"
+  resolved "https://registry.npmmirror.com/cssnano-preset-default/-/cssnano-preset-default-6.0.1.tgz"
+  integrity sha512-7VzyFZ5zEB1+l1nToKyrRkuaJIx0zi/1npjvZfbBwbtNTzhLtlvYraK/7/uqmX2Wb2aQtd983uuGw79jAjLSuQ==
   dependencies:
     css-declaration-sorter "^6.3.1"
     cssnano-utils "^4.0.0"
-    postcss-calc "^8.2.3"
+    postcss-calc "^9.0.0"
     postcss-colormin "^6.0.0"
     postcss-convert-values "^6.0.0"
     postcss-discard-comments "^6.0.0"
@@ -2091,7 +2036,7 @@ cssnano-preset-default@^6.0.0:
     postcss-discard-empty "^6.0.0"
     postcss-discard-overridden "^6.0.0"
     postcss-merge-longhand "^6.0.0"
-    postcss-merge-rules "^6.0.0"
+    postcss-merge-rules "^6.0.1"
     postcss-minify-font-values "^6.0.0"
     postcss-minify-gradients "^6.0.0"
     postcss-minify-params "^6.0.0"
@@ -2117,11 +2062,11 @@ cssnano-utils@^4.0.0:
   integrity sha512-Z39TLP+1E0KUcd7LGyF4qMfu8ZufI0rDzhdyAMsa/8UyNUU8wpS0fhdBxbQbv32r64ea00h4878gommRVg2BHw==
 
 cssnano@^6.0.0:
-  version "6.0.0"
-  resolved "https://registry.npmmirror.com/cssnano/-/cssnano-6.0.0.tgz"
-  integrity sha512-RGlcbzGhzEBCHuQe3k+Udyj5M00z0pm9S+VurHXFEOXxH+y0sVrJH2sMzoyz2d8N1EScazg+DVvmgyx0lurwwA==
+  version "6.0.1"
+  resolved "https://registry.npmmirror.com/cssnano/-/cssnano-6.0.1.tgz"
+  integrity sha512-fVO1JdJ0LSdIGJq68eIxOqFpIJrZqXUsBt8fkrBcztCQqAjQD51OhZp7tc0ImcbwXD4k7ny84QTV90nZhmqbkg==
   dependencies:
-    cssnano-preset-default "^6.0.0"
+    cssnano-preset-default "^6.0.1"
     lilconfig "^2.1.0"
 
 csso@^5.0.5:
@@ -2131,10 +2076,10 @@ csso@^5.0.5:
   dependencies:
     css-tree "~2.2.0"
 
-csstype@^2.6.8:
-  version "2.6.21"
-  resolved "https://registry.npmmirror.com/csstype/-/csstype-2.6.21.tgz"
-  integrity sha512-Z1PhmomIfypOpoMjRQB70jfvy/wxT50qW08YXO5lMIJkrdq4yOTR+AW7FqutScmB9NkLwxo+jU+kZLbofZZq/w==
+csstype@^3.1.1:
+  version "3.1.2"
+  resolved "https://registry.npmmirror.com/csstype/-/csstype-3.1.2.tgz#1d4bf9d572f11c14031f0436e1c10bc1f571f50b"
+  integrity sha512-I7K1Uu0MBPzaFKg4nI5Q7Vs2t+3gWWW648spaF+Rg7pI9ds18Ugn+lvg4SHczUdKlHI5LWBXyqfS8+DufyBsgQ==
 
 cuint@^0.2.2:
   version "0.2.2"
@@ -2153,7 +2098,7 @@ debug@2.6.9:
   dependencies:
     ms "2.0.0"
 
-debug@4, debug@^4.1.0, debug@^4.1.1, debug@^4.3.2, debug@^4.3.4:
+debug@4, debug@^4.1.0, debug@^4.1.1, debug@^4.3.2, debug@^4.3.3, debug@^4.3.4:
   version "4.3.4"
   resolved "https://registry.npmmirror.com/debug/-/debug-4.3.4.tgz"
   integrity sha512-PRWFHuSU3eDtQJPvnNY7Jcket1j0t5OuOsFzPPzsekD52Zl8qUfFIPEiswXqIvHWGVHOgX+7G/vCNNhehwxfkQ==
@@ -2270,7 +2215,7 @@ domelementtype@^2.3.0:
   resolved "https://registry.npmmirror.com/domelementtype/-/domelementtype-2.3.0.tgz"
   integrity sha512-OLETBj6w0OsagBwdXnPdN0cnMfF9opN69co+7ZrbfPGrdpPVNBUj02spi6B1N7wChLQiPn4CSH/zJvXw56gmHw==
 
-domhandler@^5.0.1, domhandler@^5.0.2:
+domhandler@^5.0.2, domhandler@^5.0.3:
   version "5.0.3"
   resolved "https://registry.npmmirror.com/domhandler/-/domhandler-5.0.3.tgz"
   integrity sha512-cgwlv/1iFQiFnU96XXgROh8xTeetsnJiDsTc7TYCLFd9+/WNkIqPTxiM/8pSd8VIrhXGTf1Ny1q1hquVqDJB5w==
@@ -2278,13 +2223,13 @@ domhandler@^5.0.1, domhandler@^5.0.2:
     domelementtype "^2.3.0"
 
 domutils@^3.0.1:
-  version "3.0.1"
-  resolved "https://registry.npmmirror.com/domutils/-/domutils-3.0.1.tgz"
-  integrity sha512-z08c1l761iKhDFtfXO04C7kTdPBLi41zwOZl00WS8b5eiaebNpY00HKbztwBq+e3vyqWNwWF3mP9YLUeqIrF+Q==
+  version "3.1.0"
+  resolved "https://registry.npmmirror.com/domutils/-/domutils-3.1.0.tgz"
+  integrity sha512-H78uMmQtI2AhgDJjWeQmHwJJ2bLPD3GMmO7Zja/ZZh84wkm+4ut+IUnUdRa8uCGX88DiVx1j6FRe1XfxEgjEZA==
   dependencies:
     dom-serializer "^2.0.0"
     domelementtype "^2.3.0"
-    domhandler "^5.0.1"
+    domhandler "^5.0.3"
 
 dot-prop@^7.2.0:
   version "7.2.0"
@@ -2381,7 +2326,7 @@ error-ex@^1.3.1:
   dependencies:
     is-arrayish "^0.2.1"
 
-esbuild@^0.17.16, esbuild@^0.17.17, esbuild@^0.17.18, esbuild@^0.17.5:
+esbuild@^0.17.16, esbuild@^0.17.18, esbuild@^0.17.5:
   version "0.17.18"
   resolved "https://registry.npmmirror.com/esbuild/-/esbuild-0.17.18.tgz"
   integrity sha512-z1lix43jBs6UKjcZVKOw2xx69ffE2aG0PygLL5qJ9OS/gy0Ewd1gW/PUQIOIQGXBHWNywSc0floSKoMFF8aK2w==
@@ -2555,6 +2500,23 @@ fill-range@^7.0.1:
   integrity sha512-qOo9F+dMUmC2Lcb4BbVvnKJxTPjCm+RRpe4gDuGrzkL7mEVl/djYSu2OdQ2Pa302N4oqkSg9ir6jaLWJ2USVpQ==
   dependencies:
     to-regex-range "^5.0.1"
+
+find-cache-dir@^3.3.2:
+  version "3.3.2"
+  resolved "https://registry.npmmirror.com/find-cache-dir/-/find-cache-dir-3.3.2.tgz#b30c5b6eff0730731aea9bbd9dbecbd80256d64b"
+  integrity sha512-wXZV5emFEjrridIgED11OoUKLxiYjAcqot/NJdAkOhlJ+vGzwhOAfcG5OX1jP+S0PcjEn8bdMJv+g2jwQ3Onig==
+  dependencies:
+    commondir "^1.0.1"
+    make-dir "^3.0.2"
+    pkg-dir "^4.1.0"
+
+find-up@^4.0.0:
+  version "4.1.0"
+  resolved "https://registry.npmmirror.com/find-up/-/find-up-4.1.0.tgz#97afe7d6cdc0bc5928584b7c8d7b16e8a9aa5d19"
+  integrity sha512-PpOwAdQ/YlXQ2vj8a3h8IipDuYRi3wceVQQGYWxNINccq40Anw7BlsEXCMbt1Zt+OLA6Fq9suIpIWD0OsnISlw==
+  dependencies:
+    locate-path "^5.0.0"
+    path-exists "^4.0.0"
 
 flat@^5.0.2:
   version "5.0.2"
@@ -3351,6 +3313,13 @@ local-pkg@^0.4.3:
   resolved "https://registry.npmmirror.com/local-pkg/-/local-pkg-0.4.3.tgz"
   integrity sha512-SFppqq5p42fe2qcZQqqEOiVRXl+WCP1MdT6k7BDEW1j++sp5fIY+/fdRQitvKgB5BrBcmrs5m/L0v2FrU5MY1g==
 
+locate-path@^5.0.0:
+  version "5.0.0"
+  resolved "https://registry.npmmirror.com/locate-path/-/locate-path-5.0.0.tgz#1afba396afd676a6d42504d0a67a3a7eb9f62aa0"
+  integrity sha512-t7hw9pI+WvuwNJXwk5zVHpyhIqzg2qTlklJOf0mVxGSbe3Fp2VieZcduNYjaLDoy6p9uGpQEGWG87WpMKlNq8g==
+  dependencies:
+    p-locate "^4.1.0"
+
 lodash._reinterpolate@^3.0.0:
   version "3.0.0"
   resolved "https://registry.npmmirror.com/lodash._reinterpolate/-/lodash._reinterpolate-3.0.0.tgz"
@@ -3453,13 +3422,6 @@ lru-cache@^9.0.3:
   resolved "https://registry.npmmirror.com/lru-cache/-/lru-cache-9.1.1.tgz"
   integrity sha512-65/Jky17UwSb0BuB9V+MyDpsOtXKmYwzhyl+cOa9XUiI4uV2Ouy/2voFP3+al0BjZbJgMBD8FojMpAf+Z+qn4A==
 
-magic-string@^0.25.7:
-  version "0.25.9"
-  resolved "https://registry.npmmirror.com/magic-string/-/magic-string-0.25.9.tgz"
-  integrity sha512-RmF0AsMzgt25qzqqLc1+MbHmhdx0ojF2Fvs4XnOqz2ZOBXzzkEwc/dJQZCYHAn7v1jbVOjAZfK8msRn4BxO4VQ==
-  dependencies:
-    sourcemap-codec "^1.4.8"
-
 magic-string@^0.27.0:
   version "0.27.0"
   resolved "https://registry.npmmirror.com/magic-string/-/magic-string-0.27.0.tgz"
@@ -3474,7 +3436,7 @@ magic-string@^0.30.0:
   dependencies:
     "@jridgewell/sourcemap-codec" "^1.4.13"
 
-make-dir@^3.1.0, make-dir@~3.1.0:
+make-dir@^3.0.2, make-dir@^3.1.0, make-dir@~3.1.0:
   version "3.1.0"
   resolved "https://registry.npmmirror.com/make-dir/-/make-dir-3.1.0.tgz"
   integrity sha512-g3FeP20LNwhALb/6Cz6Dd4F2ngze0jz7tbzrD2wAV+o9FeNHe4rL+yK2md0J/fiSf1sa1ADhXqi5+oVwOM/eGw==
@@ -3841,75 +3803,16 @@ nth-check@^2.0.1:
   dependencies:
     boolbase "^1.0.0"
 
-nuxi@3.4.2:
-  version "3.4.2"
-  resolved "https://registry.npmmirror.com/nuxi/-/nuxi-3.4.2.tgz"
-  integrity sha512-kwKEbfS3EhiQX8BMwcAPgfWiFlV8gBa2dI0kPNYD3Egab5Vixs3P2h6dGq7RsEYZEJ6aU876J44ySF7l8bmDGg==
-  optionalDependencies:
-    fsevents "~2.3.2"
-
 nuxi@3.4.3:
   version "3.4.3"
-  resolved "https://registry.npmmirror.com/nuxi/-/nuxi-3.4.3.tgz#06833bab32b494f92d913917246ad27192192613"
+  resolved "https://registry.npmmirror.com/nuxi/-/nuxi-3.4.3.tgz"
   integrity sha512-Flb23UkrWrTP/MmvHTpk+OLu+x2T2V9ciS8aCRsvADXTW3YIY2zGqFkqg6rKDCCeaoFn/MS1IxVgViT/FFe3QQ==
   optionalDependencies:
     fsevents "~2.3.2"
 
-nuxt@^3.4.2:
-  version "3.4.2"
-  resolved "https://registry.npmmirror.com/nuxt/-/nuxt-3.4.2.tgz"
-  integrity sha512-4v+oeBL4ZI8nHzF0Dm1p5kF9VCNlzrpvOt7wu3BnmzlueXsu4A/LfmFvpfZLxws+r5U74eM5Ut/LMD8B8LrZIw==
-  dependencies:
-    "@nuxt/devalue" "^2.0.0"
-    "@nuxt/kit" "3.4.2"
-    "@nuxt/schema" "3.4.2"
-    "@nuxt/telemetry" "^2.2.0"
-    "@nuxt/ui-templates" "^1.1.1"
-    "@nuxt/vite-builder" "3.4.2"
-    "@unhead/ssr" "^1.1.26"
-    "@unhead/vue" "^1.1.26"
-    "@vue/shared" "^3.2.47"
-    chokidar "^3.5.3"
-    cookie-es "^0.5.0"
-    defu "^6.1.2"
-    destr "^1.2.2"
-    devalue "^4.3.0"
-    escape-string-regexp "^5.0.0"
-    estree-walker "^3.0.3"
-    fs-extra "^11.1.1"
-    globby "^13.1.4"
-    h3 "^1.6.4"
-    hookable "^5.5.3"
-    jiti "^1.18.2"
-    klona "^2.0.6"
-    knitwork "^1.0.0"
-    local-pkg "^0.4.3"
-    magic-string "^0.30.0"
-    mlly "^1.2.0"
-    nitropack "^2.3.3"
-    nuxi "3.4.2"
-    nypm "^0.2.0"
-    ofetch "^1.0.1"
-    ohash "^1.1.1"
-    pathe "^1.1.0"
-    perfect-debounce "^0.1.3"
-    prompts "^2.4.2"
-    scule "^1.0.0"
-    strip-literal "^1.0.1"
-    ufo "^1.1.1"
-    unctx "^2.3.0"
-    unenv "^1.4.1"
-    unimport "^3.0.6"
-    unplugin "^1.3.1"
-    untyped "^1.3.2"
-    vue "^3.2.47"
-    vue-bundle-renderer "^1.0.3"
-    vue-devtools-stub "^0.1.0"
-    vue-router "^4.1.6"
-
-nuxt@^3.4.3:
+nuxt@^3.4.2, nuxt@^3.4.3:
   version "3.4.3"
-  resolved "https://registry.npmmirror.com/nuxt/-/nuxt-3.4.3.tgz#0db58e3a70afa3c06744868cd6a13e5f0d83dbf1"
+  resolved "https://registry.npmmirror.com/nuxt/-/nuxt-3.4.3.tgz"
   integrity sha512-rOEdhHRH33m3L7aJDO7N8C+NC2vSa2mC/0hH/ePmg2S03qkzS0bVg1pIWW9ESDV5UVPFtfhOGoDTEkLJqvE18A==
   dependencies:
     "@nuxt/devalue" "^2.0.0"
@@ -4060,6 +3963,25 @@ os-tmpdir@~1.0.2:
   resolved "https://registry.npmmirror.com/os-tmpdir/-/os-tmpdir-1.0.2.tgz"
   integrity sha512-D2FR03Vir7FIu45XBY20mTb+/ZSWB00sjU9jdQXt83gDrI4Ztz5Fs7/yy74g2N5SVQY4xY1qDr4rNddwYRVX0g==
 
+p-limit@^2.2.0:
+  version "2.3.0"
+  resolved "https://registry.npmmirror.com/p-limit/-/p-limit-2.3.0.tgz#3dd33c647a214fdfffd835933eb086da0dc21db1"
+  integrity sha512-//88mFWSJx8lxCzwdAABTJL2MyWB12+eIY7MDL2SqLmAkeKU9qxRvWuSyTjm3FUmpBEMuFfckAIqEaVGUDxb6w==
+  dependencies:
+    p-try "^2.0.0"
+
+p-locate@^4.1.0:
+  version "4.1.0"
+  resolved "https://registry.npmmirror.com/p-locate/-/p-locate-4.1.0.tgz#a3428bb7088b3a60292f66919278b7c297ad4f07"
+  integrity sha512-R79ZZ/0wAxKGu3oYMlz8jy/kbhsNrS7SKZ7PxEHBgJ5+F2mtFW2fK2cOtBh1cHYkQsbzFV7I+EoRKe6Yt0oK7A==
+  dependencies:
+    p-limit "^2.2.0"
+
+p-try@^2.0.0:
+  version "2.2.0"
+  resolved "https://registry.npmmirror.com/p-try/-/p-try-2.2.0.tgz#cb2868540e313d61de58fafbe35ce9004d5540e6"
+  integrity sha512-R4nPAVTAU0B9D35/Gk3uJf/7XYbQcyohSKdvAxIRSNghFl4e71hVoGnBNQz9cWaXxO2I10KTC+3jMdvvoKw6dQ==
+
 parent-module@^1.0.0:
   version "1.0.1"
   resolved "https://registry.npmmirror.com/parent-module/-/parent-module-1.0.1.tgz"
@@ -4110,6 +4032,11 @@ parseurl@^1.3.2, parseurl@~1.3.3:
   version "1.3.3"
   resolved "https://registry.npmmirror.com/parseurl/-/parseurl-1.3.3.tgz"
   integrity sha512-CiyeOxFT/JZyN5m0z9PfXw4SCBJ6Sygz1Dpl0wqjlhDEGGBP1GnsUVEL0p63hoG1fcj3fHynXi9NYO4nWOL+qQ==
+
+path-exists@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.npmmirror.com/path-exists/-/path-exists-4.0.0.tgz#513bdbe2d3b95d7762e8c1137efa195c6c61b5b3"
+  integrity sha512-ak9Qy5Q7jYb2Wwcey5Fpvg2KoAc/ZIhLSLOSBmRmygPsGwkVVt0fZa0qrtMz+m6tJTAHfZQ8FnmB4MG4LWy7/w==
 
 path-is-absolute@1.0.1, path-is-absolute@^1.0.0:
   version "1.0.1"
@@ -4179,6 +4106,13 @@ pirates@^4.0.1:
   resolved "https://registry.npmmirror.com/pirates/-/pirates-4.0.5.tgz"
   integrity sha512-8V9+HQPupnaXMA23c5hvl69zXvTwTzyAYasnkb0Tts4XvO4CliqONMOnvlq26rkhLC3nWDFBJf73LU1e1VZLaQ==
 
+pkg-dir@^4.1.0:
+  version "4.2.0"
+  resolved "https://registry.npmmirror.com/pkg-dir/-/pkg-dir-4.2.0.tgz#f099133df7ede422e81d1d8448270eeb3e4261f3"
+  integrity sha512-HRDzbaKjC+AOWVXxAU/x54COGeIv9eb+6CkDSQoNTt4XyWoIJvuPsXizxu/Fr23EiekbtZwmh1IcIG/l/a10GQ==
+  dependencies:
+    find-up "^4.0.0"
+
 pkg-types@^1.0.2:
   version "1.0.2"
   resolved "https://registry.npmmirror.com/pkg-types/-/pkg-types-1.0.2.tgz"
@@ -4197,12 +4131,12 @@ portfinder@^1.0.26:
     debug "^3.2.7"
     mkdirp "^0.5.6"
 
-postcss-calc@^8.2.3:
-  version "8.2.4"
-  resolved "https://registry.npmmirror.com/postcss-calc/-/postcss-calc-8.2.4.tgz"
-  integrity sha512-SmWMSJmB8MRnnULldx0lQIyhSNvuDl9HfrZkaqqE/WHAhToYsAvDq+yAsA/kIyINDszOp3Rh0GFoNuH5Ypsm3Q==
+postcss-calc@^9.0.0:
+  version "9.0.1"
+  resolved "https://registry.npmmirror.com/postcss-calc/-/postcss-calc-9.0.1.tgz"
+  integrity sha512-TipgjGyzP5QzEhsOZUaIkeO5mKeMFpebWzRogWG/ysonUlnHcq5aJe0jOjpfzUU8PeSaBQnrE8ehR0QA5vs8PQ==
   dependencies:
-    postcss-selector-parser "^6.0.9"
+    postcss-selector-parser "^6.0.11"
     postcss-value-parser "^4.2.0"
 
 postcss-colormin@^6.0.0:
@@ -4312,10 +4246,10 @@ postcss-merge-longhand@^6.0.0:
     postcss-value-parser "^4.2.0"
     stylehacks "^6.0.0"
 
-postcss-merge-rules@^6.0.0:
-  version "6.0.0"
-  resolved "https://registry.npmmirror.com/postcss-merge-rules/-/postcss-merge-rules-6.0.0.tgz"
-  integrity sha512-rCXkklftzEkniyv3f4mRCQzxD6oE4Quyh61uyWTUbCJ26Pv2hoz+fivJSsSBWxDBeScR4fKCfF3HHTcD7Ybqnw==
+postcss-merge-rules@^6.0.1:
+  version "6.0.1"
+  resolved "https://registry.npmmirror.com/postcss-merge-rules/-/postcss-merge-rules-6.0.1.tgz"
+  integrity sha512-a4tlmJIQo9SCjcfiCcCMg/ZCEe0XTkl/xK0XHBs955GWg9xDX3NwP9pwZ78QUOWB8/0XCjZeJn98Dae0zg6AAw==
   dependencies:
     browserslist "^4.21.4"
     caniuse-api "^3.0.0"
@@ -4482,7 +4416,7 @@ postcss-reduce-transforms@^6.0.0:
   dependencies:
     postcss-value-parser "^4.2.0"
 
-postcss-selector-parser@^6.0.10, postcss-selector-parser@^6.0.11, postcss-selector-parser@^6.0.2, postcss-selector-parser@^6.0.4, postcss-selector-parser@^6.0.5, postcss-selector-parser@^6.0.9:
+postcss-selector-parser@^6.0.10, postcss-selector-parser@^6.0.11, postcss-selector-parser@^6.0.2, postcss-selector-parser@^6.0.4, postcss-selector-parser@^6.0.5:
   version "6.0.11"
   resolved "https://registry.npmmirror.com/postcss-selector-parser/-/postcss-selector-parser-6.0.11.tgz"
   integrity sha512-zbARubNdogI9j7WY4nQJBiNqQf3sLS3wCP4WfOidu+p28LofJqDH1tcXypGrcmMHhDk2t9wGhCsYe/+szLTy1g==
@@ -4921,11 +4855,6 @@ source-map@^0.7.3, source-map@^0.7.4:
   version "0.7.4"
   resolved "https://registry.npmmirror.com/source-map/-/source-map-0.7.4.tgz"
   integrity sha512-l3BikUxvPOcn5E74dZiq5BGsTb5yEwhaTSzccU6t4sDOH8NWJCstKO5QT2CvtFoK6F0saL7p9xHAqHOlCPJygA==
-
-sourcemap-codec@^1.4.8:
-  version "1.4.8"
-  resolved "https://registry.npmmirror.com/sourcemap-codec/-/sourcemap-codec-1.4.8.tgz"
-  integrity sha512-9NykojV5Uih4lgo5So5dtw+f0JgJX30KCNI8gwhz2J9A15wD0Ml6tjHKwf6fTSa6fAdVBdZeNOs9eJ71qCk8vA==
 
 standard-as-callback@^2.1.0:
   version "2.1.0"
@@ -5373,6 +5302,11 @@ untyped@^1.3.2:
     mri "^1.2.0"
     scule "^1.0.0"
 
+upath@^2.0.1:
+  version "2.0.1"
+  resolved "https://registry.npmmirror.com/upath/-/upath-2.0.1.tgz#50c73dea68d6f6b990f51d279ce6081665d61a8b"
+  integrity sha512-1uEe95xksV1O0CYKXo8vQvN1JEbtJp7lb7C5U9HMsIp6IVwntkH/oNUzyVNQSd4S1sYk2FpSSW44FqMc8qee5w==
+
 update-browserslist-db@^1.0.10:
   version "1.0.11"
   resolved "https://registry.npmmirror.com/update-browserslist-db/-/update-browserslist-db-1.0.11.tgz"
@@ -5432,20 +5366,18 @@ vite-plugin-checker@^0.5.6:
     vscode-languageserver-textdocument "^1.0.1"
     vscode-uri "^3.0.2"
 
-"vite@^3.0.0 || ^4.0.0", vite@~4.3.0:
-  version "4.3.3"
-  resolved "https://registry.npmmirror.com/vite/-/vite-4.3.3.tgz"
-  integrity sha512-MwFlLBO4udZXd+VBcezo3u8mC77YQk+ik+fbc0GZWGgzfbPP+8Kf0fldhARqvSYmtIWoAJ5BXPClUbMTlqFxrA==
+vite-plugin-vuetify@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.npmmirror.com/vite-plugin-vuetify/-/vite-plugin-vuetify-1.0.2.tgz#d1777c63aa1b3a308756461b3d0299fd101ee8f4"
+  integrity sha512-MubIcKD33O8wtgQXlbEXE7ccTEpHZ8nPpe77y9Wy3my2MWw/PgehP9VqTp92BLqr0R1dSL970Lynvisx3UxBFw==
   dependencies:
-    esbuild "^0.17.5"
-    postcss "^8.4.23"
-    rollup "^3.21.0"
-  optionalDependencies:
-    fsevents "~2.3.2"
+    "@vuetify/loader-shared" "^1.7.1"
+    debug "^4.3.3"
+    upath "^2.0.1"
 
-vite@~4.3.3:
+"vite@^3.0.0 || ^4.0.0", vite@~4.3.3:
   version "4.3.5"
-  resolved "https://registry.npmmirror.com/vite/-/vite-4.3.5.tgz#3871fe0f4b582ea7f49a85386ac80e84826367d9"
+  resolved "https://registry.npmmirror.com/vite/-/vite-4.3.5.tgz"
   integrity sha512-0gEnL9wiRFxgz40o/i/eTBwm+NEbpUeTWhzKrZDSdKm6nplj+z4lKz8ANDgildxHm47Vg8EUia0aicKbawUVVA==
   dependencies:
     esbuild "^0.17.5"
@@ -5523,15 +5455,20 @@ vue-router@^4.1.6:
     "@vue/devtools-api" "^6.4.5"
 
 vue@^3.2.47:
-  version "3.2.47"
-  resolved "https://registry.npmmirror.com/vue/-/vue-3.2.47.tgz#3eb736cbc606fc87038dbba6a154707c8a34cff0"
-  integrity sha512-60188y/9Dc9WVrAZeUVSDxRQOZ+z+y5nO2ts9jWXSTkMvayiWxCWOWtBQoYjLeccfXkiiPZWAHcV+WTPhkqJHQ==
+  version "3.3.1"
+  resolved "https://registry.npmmirror.com/vue/-/vue-3.3.1.tgz#267372cecd953900412bb00108bb56a591f57d33"
+  integrity sha512-3Rwy4I5idbPVSDZu6I+fFh6tdDSZbauImCTqLxE7y0LpHtiDvPeY01OI7RkFPbva1nk4hoO0sv/NzosH2h60sg==
   dependencies:
-    "@vue/compiler-dom" "3.2.47"
-    "@vue/compiler-sfc" "3.2.47"
-    "@vue/runtime-dom" "3.2.47"
-    "@vue/server-renderer" "3.2.47"
-    "@vue/shared" "3.2.47"
+    "@vue/compiler-dom" "3.3.1"
+    "@vue/compiler-sfc" "3.3.1"
+    "@vue/runtime-dom" "3.3.1"
+    "@vue/server-renderer" "3.3.1"
+    "@vue/shared" "3.3.1"
+
+vuetify@^3.1.12:
+  version "3.2.3"
+  resolved "https://registry.npmmirror.com/vuetify/-/vuetify-3.2.3.tgz#05767c3d88068654b757d33789b8c249f1d38e00"
+  integrity sha512-o7IJm/P5Ttp9ItF1ytQihsLzv4jxIYVfI4Ypkkqc4A7N2MeTmkDOPGbDNUgJ+G1p2upL00LCbc73A9YM8xYVpg==
 
 wcwidth@^1.0.1:
   version "1.0.1"

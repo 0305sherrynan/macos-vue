@@ -8,7 +8,8 @@ const config: NuxtConfig = {
   modules:[
     '@nuxtjs/tailwindcss',
     '@pinia/nuxt',
-    '@vueuse/nuxt'
+    '@vueuse/nuxt',
+    '@invictus.codes/nuxt-vuetify'
 ],
 components:[
     {
@@ -25,7 +26,20 @@ vite: {
         }
     }
 },
-
+vuetify: {
+    /* vuetify options */
+    vuetifyOptions: {
+      // @TODO: list all vuetify options
+    },
+    moduleOptions: {
+      /* nuxt-vuetify module options */
+      treeshaking: true ,
+      useIconCDN: true ,
+      /* vite-plugin-vuetify options */
+      styles: true  ,
+      autoImport: true ,
+    }
+  }
 }
 
 export default config
