@@ -6,12 +6,13 @@
             </li>
 
         </ul>
-
+        <MenubarRightBar class="desk-bar-right" />
     </div>
 </template>
 
 <script setup lang="ts">
 import { headerMenuConfig } from '~/configs/menu/header.menu.config'
+
 </script>
 
 <style scoped lang="scss">
@@ -20,6 +21,10 @@ import { headerMenuConfig } from '~/configs/menu/header.menu.config'
     width: 100%;
     height: 1.8rem;
     background-color: hsla(var(--system-color-light-hsl), .3);
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+
 
     .header-list-ul {
         height: 100%;
@@ -38,6 +43,9 @@ import { headerMenuConfig } from '~/configs/menu/header.menu.config'
 
 
         }
+    }
+    .desk-bar-right{
+
     }
 }
 </style>
