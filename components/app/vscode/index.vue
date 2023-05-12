@@ -17,8 +17,6 @@
 import {appConfig} from '~/configs/apps/apps.config'
 import {useAppsStore} from '~/store/Apps/apps'
 const appStore = useAppsStore()
-
-// import {useWindowSize, useDraggable, Position} from "@vueuse/core"
 /**
  * vscodeRef vscode iframe
  * iframe_width vscode_iframe_width
@@ -26,15 +24,19 @@ const appStore = useAppsStore()
  * iframe_width_px iframe_height_px 转为px
  * vscodeRef
  * boxOffsetX  boxOffsetY 鼠标距离盒子的偏移值
+ * header_height_px 顶部栏的height
  */
+
 const vscodeRef = ref<HTMLElement>()
 const isShow = ref<boolean>()
-const iframe_width = appConfig.vscode.width+'rem'
+const iframe_width = ref<string>(appConfig.vscode.width+'rem')
 const iframe_width_px = appConfig.vscode.width*16
-const iframe_height = appConfig.vscode.height+'rem'
+let iframe_height = ref<string>(appConfig.vscode.height+'rem')
 const iframe_height_px = appConfig.vscode.height*16
+const header_height_px = 1.8*16
 //获取窗口的width和height
 const { width, height } = useWindowSize()
+// const 
 /**
  * 
  */
@@ -42,6 +44,20 @@ const emitBtnClick = (eventType:string)=>{
     switch (eventType){
         case 'closed':{
             appStore.isOpenApp['vscode'] = false
+            break
+        }
+        case 'full':{
+            console.log('full')
+            iframe_height.value = width.value - header_height_px+'px';
+            iframe_width.value = '100vw'
+            
+  
+            x.value = 0
+            y.value = header_height_px
+            break
+        }
+        case 'reduce':{
+            //进行缩小到下面
         }
     }
 }
@@ -61,6 +77,7 @@ let { x, y, style }  = useDraggable(vscodeRef, {
     border-radius: .75rem;
     background-color: rgb(32, 35, 39);
     padding: .4rem;
+    
 }
 .vscode-iframe{
     width: v-bind(iframe_width);
