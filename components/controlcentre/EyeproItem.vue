@@ -1,6 +1,6 @@
 <template>
     <div>
-        <div class="wifi-item" @click="isOpen = !isOpen">
+        <div class="wifi-item" @click="eyeProClick">
             <svg t="1683807983415" v-if="!isOpen" class="icon" viewBox="0 0 1024 1024" version="1.1"
                 xmlns="http://www.w3.org/2000/svg" p-id="9048" width="17" height="17">
                 <path
@@ -21,14 +21,16 @@
 </template>
 
 <script setup lang="ts">
+import {useThemesStore} from '~/store/themes/themes'
+const themesStore = useThemesStore()
 const isOpen = ref<boolean>(false)
-watch(isOpen, (newval, oldval) => {
-    console.log(newval)
-})
 const currentColor = computed(() => isOpen.value ? 'var(--control-color-open)' : 'var(--control-color-closed)')
-watch(currentColor, (newval, oldval) => {
-    console.log(newval)
-})
+const eyeProClick = ()=>{
+    
+    isOpen.value = !isOpen.value
+    if(isOpen.value) themesStore.setBrightness(36)
+    else themesStore.setBrightness(100)
+}
 </script>
 
 <style scoped>
