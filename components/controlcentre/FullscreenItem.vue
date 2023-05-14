@@ -1,6 +1,6 @@
 <template>
     <div>
-        <div class="wifi-item" @click="isOpen = !isOpen">
+        <div class="wifi-item" @click="fullSceenClick">
             <svg v-if="!isOpen" t="1683806103011" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"
                 p-id="3549" width="17" height="17">
                 <path
@@ -19,13 +19,20 @@
 
 <script setup lang="ts">
 const isOpen = ref<boolean>(false)
-watch(isOpen, (newval, oldval) => {
-    console.log(newval)
-})
 const currentColor = computed(() => isOpen.value ? 'var(--control-color-open)' : 'var(--control-color-closed)')
-watch(currentColor, (newval, oldval) => {
-    console.log(newval)
-})
+const appRef = inject<globalThis.Ref<HTMLElement | undefined>>('appDom')
+
+/**
+ * method
+ * fullSceenClick 全屏点击
+ */
+const fullSceenClick = ()=> {
+    isOpen.value = !isOpen.value
+    if (process.client) {
+	document.exitFullscreen()
+}
+    appRef?.value?.requestFullscreen()
+}
 </script>
 
 <style scoped>
