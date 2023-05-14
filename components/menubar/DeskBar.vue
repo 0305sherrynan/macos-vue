@@ -1,11 +1,12 @@
 <template>
     <div class="desk-bar">
-        <ul class="header-list-ul">
-            <li v-for="(item, index) in headerMenuConfig">
-                <MenubarHeaderList :headlist="{item,index}"/>
-            </li>
-
-        </ul>
+        <div class="inline-block">
+            <ul class="header-list-ul">
+                <li v-for="(item, index) in headerMenuConfig">
+                    <MenubarHeaderList :headlist="{ item, index }" />
+                </li>
+            </ul>
+        </div>
         <MenubarRightBar class="desk-bar-right" />
     </div>
 </template>
@@ -21,9 +22,10 @@ import { headerMenuConfig } from '~/configs/menu/header.menu.config'
     width: 100%;
     height: 1.8rem;
     background-color: hsla(var(--system-color-light-hsl), .3);
-    display: flex;
-    justify-content: space-around;
-    align-items:center;
+    // display: flex;
+    // justify-content: space-around;
+    // flex-direction: row;
+    // align-items:center;
 
 
     .header-list-ul {
@@ -33,7 +35,7 @@ import { headerMenuConfig } from '~/configs/menu/header.menu.config'
 
         li {
             position: relative;
-            
+
             color: var(--system-color-light);
             padding: 0.5rem;
             font-size: 13.5px;
@@ -44,8 +46,13 @@ import { headerMenuConfig } from '~/configs/menu/header.menu.config'
 
         }
     }
-    .desk-bar-right{
 
+    .desk-bar-right {
+        display: inline-block;
+        position: absolute;
+      
+        top: .6rem;
+        right: 14rem;
     }
 }
 </style>
