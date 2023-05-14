@@ -9,7 +9,8 @@ const config: NuxtConfig = {
     '@nuxtjs/tailwindcss',
     '@pinia/nuxt',
     '@vueuse/nuxt',
-    '@invictus.codes/nuxt-vuetify'
+    '@invictus.codes/nuxt-vuetify',
+    '@nuxt/devtools'
 ],
 components:[
     {
