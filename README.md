@@ -53,3 +53,4 @@ Check out the [deployment documentation](https://nuxt.com/docs/getting-started/d
 在线展示：[mac-nuxt](https://mac-nuxt.netlify.app/)
 ## 分支
 - wallpaper 主题背景修改功能
+- merge1 准备合并分支1
