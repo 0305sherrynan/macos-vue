@@ -28,7 +28,6 @@ const appStore = useAppsStore()
  */
 
 const vscodeRef = ref<HTMLElement>()
-const isShow = ref<boolean>()
 const iframe_width = ref<string>(appConfig.vscode.width+'rem')
 const iframe_width_px = appConfig.vscode.width*16
 let iframe_height = ref<string>(appConfig.vscode.height+'rem')
