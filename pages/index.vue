@@ -1,13 +1,14 @@
 <template>
     
     <div class="first">
+       
       
-        <DesktopMain/>
+            <DesktopMain/>
+       
     </div>
 </template>
 
 <script setup lang="ts">
-// import { DesktopAbb } from '~/.nuxt/components';
 
 
 </script>
