@@ -1,8 +1,11 @@
 <template>
-    <div class="relative">
-        <div class="arrow"  @click="rotate = '180deg'" ref="arrowRef"></div>
-        <div class="absolute top-10">
-            <MenubarControlList/>
+    <div >
+        <div class="arrow" 
+            @click="rotate = rotate ==='180deg'?'0deg':'180deg';ifOpenRight=!ifOpenRight" 
+            ref="arrowRef">
+        </div>
+        <div class="absolute top-10 right-0 translate-x-1/2" v-show="ifOpenRight">
+            <MenubarControlList />
         </div>
     </div>
 </template>
@@ -11,7 +14,8 @@
 import { onClickOutside } from '@vueuse/core'
 const rotate = ref<string>('')
 const arrowRef = ref<HTMLElement>()
-const clickOut = ()=>{
+const ifOpenRight = ref<boolean>(false)
+const clickOut = () => {
     rotate.value = '0deg'
 }
 onClickOutside(arrowRef, clickOut)
@@ -22,12 +26,12 @@ onClickOutside(arrowRef, clickOut)
     /* border-top: 50px solid white; */
     width: 0px;
     height: 0px;
-    
-    border-bottom: .6rem solid  rgba(0,0,0,.5);
+
+    border-bottom: .6rem solid rgba(0, 0, 0, .5);
     border-left: .6rem solid transparent;
     border-right: .6rem solid transparent;
     transition: all 300ms linear;
-    transform:rotate(v-bind(rotate));
+    transform: rotate(v-bind(rotate));
 
 }
 </style>
