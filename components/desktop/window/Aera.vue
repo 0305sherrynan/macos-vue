@@ -2,9 +2,9 @@
     <div class="app-aera">
         <div class="inline-block relative">
             <Transition name="vscode">
-                <AppVscode v-show="isVscodeShow" class="vscode-app" @click="focuEvent('vscode')" />
+                <AppVscode class="vscode-app" @click="focuEvent('vscode')" />
             </Transition>
-            <AppChatgpt v-if="isChatgptShow" @click="focuEvent('chatgpt')" />
+            <AppChatgpt  @click="focuEvent('chatgpt')" />
         </div>
     </div>
 </template>
@@ -13,8 +13,8 @@
 import { useAppsStore } from '~/store/Apps/apps'
 import { appsID } from '~/configs/apps/apps.config'
 const appStore = useAppsStore()
-const isVscodeShow = computed(() => appStore.isOpenApp['vscode'])
-const isChatgptShow = computed(() => appStore.isOpenApp['chatgpt'])
+// const isVscodeShow = computed(() => appStore.isOpenApp['vscode'])
+// const isChatgptShow = computed(() => appStore.isOpenApp['chatgpt'])
 
 
 /**
