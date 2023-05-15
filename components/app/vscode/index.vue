@@ -1,5 +1,5 @@
 <template>
-    <div class="vscode-box" ref="vscodeRef" :style="style" >
+    <div class="vscode-box" ref="vscodeRef" :style="style" v-show="isVscodeShow">
         <DesktopWindowTrafficLight  
             ref="trafficRef" @btnClick="emitBtnClick"/>
         <iframe ref="vscodeRef"
@@ -16,6 +16,7 @@
 <script setup lang="ts">
 import {appConfig} from '~/configs/apps/apps.config'
 import {useAppsStore} from '~/store/Apps/apps'
+
 const appStore = useAppsStore()
 /**
  * vscodeRef vscode iframe
@@ -33,6 +34,7 @@ const iframe_width_px = appConfig.vscode.width*16
 let iframe_height = ref<string>(appConfig.vscode.height+'rem')
 const iframe_height_px = appConfig.vscode.height*16
 const header_height_px = 1.8*16
+const isVscodeShow = computed(() => appStore.isOpenApp['vscode'])
 //获取窗口的width和height
 const { width, height } = useWindowSize()
 // const 
