@@ -1,8 +1,8 @@
 <template>
-    <div >
+    <div  ref="arrowRef">
         <div class="arrow" 
             @click="rotate = rotate ==='180deg'?'0deg':'180deg';ifOpenRight=!ifOpenRight" 
-            ref="arrowRef">
+           >
         </div>
         <div class="absolute top-10 right-0 translate-x-1/2" v-show="ifOpenRight">
             <MenubarControlList />
@@ -17,6 +17,7 @@ const arrowRef = ref<HTMLElement>()
 const ifOpenRight = ref<boolean>(false)
 const clickOut = () => {
     rotate.value = '0deg'
+    ifOpenRight.value = false
 }
 onClickOutside(arrowRef, clickOut)
 </script>
