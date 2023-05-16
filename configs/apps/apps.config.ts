@@ -34,10 +34,17 @@ const qq = createAppHelper({
 })
 const terminal = createAppHelper({
     title:'Terminal',
-    height:600,
-    width:800,
+    height:27,
+    width:50,
     shouldOpenWindow:true,
     externalBrowserFace:()=>window.open('https://developer.mozilla.org/','_blank')
+})
+const wallpaper = createAppHelper({
+    title:'wallpaper',
+    height:22,
+    width:32,
+    shouldOpenWindow:false
+   
 })
 // const vscode = createAppHelper({
 //     title:'VSCode',
@@ -59,6 +66,7 @@ export const appConfig = {
     chatgpt,
     github,
     qq,
-    terminal
+    terminal,
+    wallpaper
 }
 export  type appsID = keyof typeof appConfig
