@@ -4,7 +4,13 @@
             <Transition name="vscode">
                 <AppVscode class="vscode-app" @click="focuEvent('vscode')" />
             </Transition>
-            <AppChatgpt  @click="focuEvent('chatgpt')" />
+
+            <Transition name="vscode">
+                <AppChatgpt @click="focuEvent('chatgpt')" />
+            </Transition>
+            <Transition name="vscode">
+                <AppWall @click="focuEvent('wallpaper')" />
+            </Transition>
         </div>
     </div>
 </template>
@@ -13,9 +19,6 @@
 import { useAppsStore } from '~/store/Apps/apps'
 import { appsID } from '~/configs/apps/apps.config'
 const appStore = useAppsStore()
-// const isVscodeShow = computed(() => appStore.isOpenApp['vscode'])
-// const isChatgptShow = computed(() => appStore.isOpenApp['chatgpt'])
-
 
 /**
  * 
@@ -23,30 +26,34 @@ const appStore = useAppsStore()
 
 const focuEvent = (activeID: appsID) => {
     appStore.activeAppInstance = activeID
-    console.log(activeID)
+   
 }
 </script>
 
 <style scoped lang="scss">
-.vscode-enter-from{
-    transform:scale(0,0);
-    transform-origin: center,center;
+.vscode-enter-from {
+    transform: scale(0, 0);
+    transform-origin: center, center;
     opacity: 1;
 }
-.vscode-enter-active{
+
+.vscode-enter-active {
     transition: all 300ms linear;
-    
+
 }
-.vscode-leave-active{
+
+.vscode-leave-active {
     transition: all 300ms linear;
-   
+
 }
-.vscode-leave-to{
-    
-    transform:scale(0,0);
-    transform-origin: center,center;
+
+.vscode-leave-to {
+
+    transform: scale(0, 0);
+    transform-origin: center, center;
     opacity: 0;
 }
+
 .app-aera {
     display: flex;
     flex-direction: row;
@@ -55,7 +62,6 @@ const focuEvent = (activeID: appsID) => {
 
     .vscode-app {
         position: fixed;
-     
+
     }
-}
-</style>
+}</style>
