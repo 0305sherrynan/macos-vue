@@ -14,6 +14,7 @@ export const useAppsStore = defineStore('apps', {
         qq:false,
         terminal:false,
         chatgpt:false,
+        wallpaper:false
         // 'avs':false
       },
       activeAppInstance:''

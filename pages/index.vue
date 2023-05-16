@@ -1,10 +1,6 @@
 <template>
-    
     <div class="first">
-       
-      
             <DesktopMain/>
-       
     </div>
 </template>
 

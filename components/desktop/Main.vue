@@ -20,9 +20,6 @@ const openRightMenu = (e:MouseEvent)=>{
   //获取相对于文档的x、y轴坐标
   xPage.value = e.pageX
   yPage.value = e.pageY
-  
-
-  
 }
 /**
  * 
@@ -34,6 +31,7 @@ onMounted(()=>{
 
 <template>
   <div id="main" @click.right.native="openRightMenu" ref="Main">
+    <DesktopWall/>
     <MenubarDeskBar />
     <DesktopWindowAera class="app-aera"/>
     <DockFrame class="dock"  />
@@ -50,19 +48,16 @@ onMounted(()=>{
   grid-template-rows: auto 1fr auto;
 
   will-change: background-image;
-  background-image: url('~/assets/image/wallpapers/43.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  // background-image: url('~/assets/image/wallpapers/43.jpg');
+  // background-repeat: no-repeat;
+  // background-size: cover;
+  // background-position: center;
 
   .dock {
     position: absolute;
     bottom: 1rem;
     left: 50%;
     transform: translateX(-50%);
-
-
-
   }
 
 
