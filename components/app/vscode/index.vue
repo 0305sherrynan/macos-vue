@@ -51,14 +51,16 @@ const emitBtnClick = (eventType:string)=>{
             console.log('full')
             iframe_height.value = width.value - header_height_px+'px';
             iframe_width.value = '100vw'
-            
-  
             x.value = 0
             y.value = header_height_px
             break
         }
         case 'reduce':{
-            //进行缩小到下面
+            iframe_height.value = appConfig.vscode.height+'rem'
+            iframe_width.value = appConfig.vscode.width+'rem'
+            x.value = width.value/2-iframe_width_px/2
+            y.value = height.value/2-iframe_height_px/2
+            break
         }
     }
 }
@@ -73,8 +75,8 @@ let { x, y, style }  = useDraggable(vscodeRef, {
 
 <style scoped>
 .vscode-box{
-    /* transition: all 1s linear;
-    transform-origin: center,center; */
+     /* transition: all 1s linear; */
+    /* transform-origin: center,center;  */
     border-radius: .75rem;
     background-color: rgb(32, 35, 39);
     padding: .4rem;

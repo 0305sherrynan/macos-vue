@@ -58,7 +58,11 @@ const emitBtnClick = (eventType:string)=>{
             break
         }
         case 'reduce':{
-            //进行缩小到下面
+            iframe_height.value = appConfig.chatgpt.height+'rem'
+            iframe_width.value = appConfig.chatgpt.width+'rem'
+            x.value = width.value/2-iframe_width_px/2
+            y.value = height.value/2-iframe_height_px/2
+            break
         }
     }
 }
