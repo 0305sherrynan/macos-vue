@@ -22,8 +22,9 @@ const moveChange = (scale_width:string)=>{
     flex-direction: row;
     border-radius: 1rem;
     justify-content: center;
-    width: v-bind(bigFrameWidth);
+    // width: v-bind(bigFrameWidth);
     height: 4rem;
+    padding: 0 2rem;
 
     
     background-color: hsla(var(--system-color-light-hsl), 0.4);
