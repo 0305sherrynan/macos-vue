@@ -10,7 +10,7 @@
                 </svg>
             </div>
         </div>
-        <div class="reduce" ref="reduceRef">
+        <div class="reduce" ref="reduceRef" @click="reduceCurrentWindow">
             <div v-show="isShowIcon">
                 <!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'><svg height="15px" id="Layer_1" style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512" width="15px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M417.4,224H94.6C77.7,224,64,238.3,64,256c0,17.7,13.7,32,30.6,32h322.8c16.9,0,30.6-14.3,30.6-32  C448,238.3,434.3,224,417.4,224z"/></svg>
             </div>
@@ -59,6 +59,9 @@ const closedCurrentWindow = ()=>{
 }
 const fullCurrentWindow = ()=>{
     emit('btnClick','full')
+}
+const reduceCurrentWindow = ()=>{
+    emit('btnClick','reduce')
 }
 /**
  *  监听三个灯的鼠标事件
