@@ -6,10 +6,10 @@
             </Transition>
 
             <Transition name="vscode">
-                <AppChatgpt @click="focuEvent('chatgpt')" />
+                <AppChatgpt @click="focuEvent('chatgpt')" class="vscode-app"/>
             </Transition>
             <Transition name="vscode">
-                <AppWall @click="focuEvent('wallpaper')" />
+                <AppWall @click="focuEvent('wallpaper')" class="vscode-app"/>
             </Transition>
         </div>
     </div>
