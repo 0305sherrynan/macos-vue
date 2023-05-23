@@ -18,7 +18,7 @@ import { headerMenuConfig } from '~/configs/menu/header.menu.config'
 
 <style scoped lang="scss">
 .desk-bar {
-    z-index: 99999;
+    z-index: 49;
     width: 100%;
     height: 1.8rem;
     background-color: hsla(var(--system-color-light-hsl), .3);

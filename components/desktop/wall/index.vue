@@ -6,12 +6,11 @@
 </template>
 
 <script setup lang="ts">
-import { url } from 'inspector';
+
 import {usePapersStore} from '~/store/Wallpaper/paper'
 const paperStore = usePapersStore()
 const switchNewPaper = ref<string>(paperStore.image)
 watch((paperStore.imageGetter),(newValu)=>{
-    console.log(12345)
     switchNewPaper.value = newValu
 })
 </script>

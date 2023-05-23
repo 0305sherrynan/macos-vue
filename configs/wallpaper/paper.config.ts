@@ -16,15 +16,17 @@ const createWallPaperConfig = (wallPaperObj: Record<string, wallPaperConfig>): R
   }) as Record<string, NodeModule>
   //获取所有图片的键值对
   const bPEntries = Object.entries(batchPictures)
+  console.log(bPEntries)
+  console.log(bPEntries[0][1])
   for (let [key, item] of Object.entries(wallPaperObj)) {
     //引用单个配置对象
     const concreteEachConfig = wallPaperObj[key]
     //将图片路径放入thumbnail属性上
-    concreteEachConfig.thumbnail = (bPEntries.find(([path]) => path.includes(item.thumbnail)) as Array<any>)[1].default
+    concreteEachConfig.thumbnail = (bPEntries.find(([path]) => path.includes(item.thumbnail)) as any)[1].default
     //对于动态图片的额外改动
     if (concreteEachConfig.timestamps && concreteEachConfig.timestamps.wallpaper) {
       for (let [keyDynamic, itemDynamic] of Object.entries(concreteEachConfig.timestamps.wallpaper)) {
-        concreteEachConfig.timestamps.wallpaper[keyDynamic] = (bPEntries.find(([path]) => path.includes(itemDynamic)) as Array<any>)[1].default
+        concreteEachConfig.timestamps.wallpaper[keyDynamic] = (bPEntries.find(([path]) => path.includes(itemDynamic)) as any)[1].default
       }
     }
   }
