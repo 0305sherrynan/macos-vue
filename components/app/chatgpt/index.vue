@@ -33,7 +33,9 @@ const iframe_width = ref<string>(appConfig.chatgpt.width+'rem')
 const iframe_width_px = appConfig.chatgpt.width*16
 let iframe_height = ref<string>(appConfig.chatgpt.height+'rem')
 const iframe_height_px = appConfig.chatgpt.height*16
+const dock_height_px = 5*16
 const header_height_px = 1.8*16
+const traffic_height_px  = 1.6*16
 const isVscodeShow = computed(() => appStore.isOpenApp['chatgpt'])
 //获取窗口的width和height
 const { width, height } = useWindowSize()
@@ -48,11 +50,9 @@ const emitBtnClick = (eventType:string)=>{
             break
         }
         case 'full':{
-            console.log('full')
-            iframe_height.value = width.value - header_height_px+'px';
+            console.log(height.value,header_height_px)
+            iframe_height.value = height.value-traffic_height_px-header_height_px-dock_height_px-0.4*16*2 +'px';
             iframe_width.value = '100vw'
-            
-  
             x.value = 0
             y.value = header_height_px
             break

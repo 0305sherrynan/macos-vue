@@ -1,14 +1,16 @@
-<template>
+<template class="vscode-tpl">
     <div class="vscode-box" ref="vscodeRef" :style="style" v-show="isVscodeShow">
         <DesktopWindowTrafficLight  
             ref="trafficRef" @btnClick="emitBtnClick"/>
         <iframe ref="vscodeRef"
             class="vscode-iframe"
-            src="https://stackblitz.com/github/0305sherrynan/macos-vue?file=app.vue" 
+            
+            src="https://stackblitz.com/edit/vue-gmz8ug?file=src%2FApp.vue"
             frameborder="0"
             allowfullscreen="true"
             height="100px"
             >
+            <!--src="https://stackblitz.com/github/0305sherrynan/macos-vue?file=app.vue" -->
         </iframe>
     </div>
 </template>
@@ -26,6 +28,8 @@ const appStore = useAppsStore()
  * vscodeRef
  * boxOffsetX  boxOffsetY 鼠标距离盒子的偏移值
  * header_height_px 顶部栏的height
+ * traffic_height_px 红绿灯的height
+ * dock_height_px dock的height
  */
 
 const vscodeRef = ref<HTMLElement>()
@@ -33,7 +37,9 @@ const iframe_width = ref<string>(appConfig.vscode.width+'rem')
 const iframe_width_px = appConfig.vscode.width*16
 let iframe_height = ref<string>(appConfig.vscode.height+'rem')
 const iframe_height_px = appConfig.vscode.height*16
+const dock_height_px = 5*16
 const header_height_px = 1.8*16
+const traffic_height_px  = 1.6*16
 const isVscodeShow = computed(() => appStore.isOpenApp['vscode'])
 //获取窗口的width和height
 const { width, height } = useWindowSize()
@@ -48,8 +54,8 @@ const emitBtnClick = (eventType:string)=>{
             break
         }
         case 'full':{
-            console.log('full')
-            iframe_height.value = width.value - header_height_px+'px';
+            console.log(height.value,header_height_px)
+            iframe_height.value = height.value-traffic_height_px-header_height_px-dock_height_px-0.4*16*2 +'px';
             iframe_width.value = '100vw'
             x.value = 0
             y.value = header_height_px
@@ -74,6 +80,9 @@ let { x, y, style }  = useDraggable(vscodeRef, {
 </script>
 
 <style scoped>
+.vscode-tpl{
+
+}
 .vscode-box{
      /* transition: all 1s linear; */
     /* transform-origin: center,center;  */
