@@ -36,8 +36,8 @@ const terminal = createAppHelper({
     title:'Terminal',
     height:27,
     width:50,
-    shouldOpenWindow:true,
-    externalBrowserFace:()=>window.open('https://developer.mozilla.org/','_blank')
+    shouldOpenWindow:false,
+  
 })
 const wallpaper = createAppHelper({
     title:'wallpaper',

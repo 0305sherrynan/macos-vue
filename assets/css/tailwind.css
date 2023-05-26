@@ -7,3 +7,6 @@ html{
     overflow:  hidden !important;
     /* 默认 1rem = 16px*/
 }
+img{
+    /* max-width: none; */
+}

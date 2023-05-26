@@ -17,67 +17,27 @@
 </template>
 
 <script setup lang="ts">
-import {appConfig} from '~/configs/apps/apps.config'
-import {useAppsStore} from '~/store/Apps/apps'
+import { useAppsStore } from '~/store/Apps/apps'
+import useTraffic from '~/hooks/useTraffic'
 
-const appStore = useAppsStore()
+
 /**
  * vscodeRef vscode iframe
  * iframe_width vscode_iframe_width
  * iframe_height ..
- * iframe_width_px iframe_height_px 转为px
- * vscodeRef
- * boxOffsetX  boxOffsetY 鼠标距离盒子的偏移值
- * header_height_px 顶部栏的height
- * traffic_height_px 红绿灯的height
- * dock_height_px dock的height
+ * isVscodeShow 是否显示
  */
-
 const vscodeRef = ref<HTMLElement>()
-const iframe_width = ref<string>(appConfig.vscode.width+'rem')
-const iframe_width_px = appConfig.vscode.width*16
-let iframe_height = ref<string>(appConfig.vscode.height+'rem')
-const iframe_height_px = appConfig.vscode.height*16
-const dock_height_px = 5*16
-const header_height_px = 1.8*16
-const traffic_height_px  = 1.6*16
+const appStore = useAppsStore()
+const { iframe_height, iframe_width, style, trafficChange } = useTraffic('vscode', vscodeRef)
 const isVscodeShow = computed(() => appStore.isOpenApp['vscode'])
-//获取窗口的width和height
-const { width, height } = useWindowSize()
-// const 
 /**
  * 
+ * @param eventType  事件的类型 包括 reduce、full、closed
  */
-const emitBtnClick = (eventType:string)=>{
-    switch (eventType){
-        case 'closed':{
-            appStore.isOpenApp['vscode'] = false
-            break
-        }
-        case 'full':{
-            console.log(height.value,header_height_px)
-            iframe_height.value = height.value-traffic_height_px-header_height_px-dock_height_px-0.4*16*2 +'px';
-            iframe_width.value = '100vw'
-            x.value = 0
-            y.value = header_height_px
-            break
-        }
-        case 'reduce':{
-            iframe_height.value = appConfig.vscode.height+'rem'
-            iframe_width.value = appConfig.vscode.width+'rem'
-            x.value = width.value/2-iframe_width_px/2
-            y.value = height.value/2-iframe_height_px/2
-            break
-        }
-    }
+const emitBtnClick = (eventType: string) => {
+    trafficChange(eventType)
 }
-/**
- * 监听拖拽事件
- */
-let { x, y, style }  = useDraggable(vscodeRef, {
-    initialValue: { x: width.value/2-iframe_width_px/2, y: height.value/2-iframe_height_px/2},
-})
-     
 </script>
 
 <style scoped>
