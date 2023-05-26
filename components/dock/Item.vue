@@ -31,8 +31,8 @@ const dockItemRef = ref<Element>()
 const preVnodeRef = ref<Element | null>()
 const default_width: number = 4
 const default_height: number = 4
-const scale_width = ref<string>('4rem')
-const scale_height = ref<string>('4rem')
+const scale_width = ref<string>('5rem')
+const scale_height = ref<string>('5rem')
 const scale_position_height = computed(() => Number(scale_height.value.replace('rem', '')) - default_height + 'rem')
 const scaleTimeMax: number = 0.6
 const preScaleTimeMax:number = 1
@@ -95,6 +95,7 @@ const leaveIcon = () => {
     >img {
         width: v-bind(scale_width);
         height: v-bind(scale_height);
+        max-width: none;
     }
     + div{
         >img{

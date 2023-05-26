@@ -11,6 +11,9 @@
             <Transition name="vscode">
                 <AppWall @click="focuEvent('wallpaper')" class="vscode-app"/>
             </Transition>
+            <Transition name="vscode">
+                <AppTerminal @click="focuEvent('terminal')" class="vscode-app"/>
+            </Transition>
         </div>
     </div>
 </template>
